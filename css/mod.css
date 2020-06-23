@@ -6,6 +6,7 @@ html {
 	font-family: 'Open Sans', sans-serif;
 }
 
+@media (min-width: 30em) {
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -13,12 +14,8 @@ html {
 		justify-content: space-around;
 	}
 
-@media (min-width: 30em) {
-	.row {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-around;
+	.banner {
+		flex: 1 1 auto;
 	}
 
 	.featured-product {
@@ -310,12 +307,14 @@ p {
 #nav-mod-logo {
 	font-family: "Josefin Sans", sans-serif;
 	color: #f8f8f8;
+	margin: 0 0;
+	text-align: center;
 }
 
 .nav_link_icons {
-	padding: 0px 0px;
 	text-decoration: none;
 	list-style: none;
+	text-align: center;
 }
 
 .nav_link_icons li{
@@ -331,6 +330,8 @@ p {
 #nav-example {
 	background-color:#313639 ;
 	align-items: center;
+	margin-bottom: 20px;
+	padding: 30px 0px;
 }
 
 .nav_link_example {
