@@ -1,0 +1,38 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	background-color: #CBE8F0;
+}
+
+.nav-container {
+        position: sticky; 
+        top:0;
+        z-index: +1;
+}
+
+#logo {
+	font-family: "Josefin Sans", sans-serif;
+	color: #313639; /* off black */
+	margin-left: 0px;
+}
+
+.nav_link {
+	list-style: none;
+}
+
+.nav_link li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav_link li a {
+	text-decoration: none;
+	color: #313639; /* off black */
+	transition: 0.3s ease;
+}
+
+.nav_link li a:hover {
+	color: #A86BE3;
+}
