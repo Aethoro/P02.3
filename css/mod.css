@@ -1311,7 +1311,7 @@ a {
 }
 
 
-.write-review {
+/*.write-review {
 	background-color: white;
 	position: absolute;
 	margin-top: 10px; 
@@ -1323,7 +1323,7 @@ a {
     z-index: +1;
     top: 1425px;
  
-}
+}*/
 
 .write-review i {
 	color: black;
@@ -1383,7 +1383,26 @@ input:checked + label:after {
 		background-color: #9CEDEB;
 }
 
-
+.Wrap{
+    background:#ccc;
+    width:0px;
+    height:0px;
+    margin:0 auto;
+}
+.write-review{
+    position:fixed;
+    top:300px;
+    right:50%; /* this is the trick to make the fixed div appear absolute */
+    height:500px;
+    width:450px;
+    margin-right:-225px; /*Must be half of container width plus desired positioning*/
+    z-index: +2;
+    background-color: #ffffff;
+    margin-top: 10px; 
+	border: 1px solid black; 
+    padding: 20px 20px;
+    text-align: center;
+}
 
 
 
