@@ -1342,10 +1342,10 @@ input:checked + label + div {
 	display: none; }
 
 input + label:after { 
-	content: " To Close Box"; 
+	content: " "; 
 }
 input:checked + label:after {
-	 content: " To Write Review"; }
+	 content: " "; }
 
 #toggle-button {
     background-color: #9CEDEB;
