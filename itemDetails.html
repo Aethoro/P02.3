@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>P02 Test</title>
+		<title>Item Details</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/mod.css">
 		<script src="https://kit.fontawesome.com/4346ed3535.js" crossorigin="anonymous"></script>
@@ -70,19 +70,24 @@
 						</div>
 					</div> <!-- end of small product photos column-->
 
+					<div class="column">
 						<div class="item-pic">
 							<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
 						</div>
+					</div>
 
-
+					<div class="bulb-column">
 						<div class="item-detail-info">
 							<h1>Whimsical Bulb</h1>
 							<h2>$45</h2>
-							<a href="#review">Reviews(4)</a>
+							<a href="#review">Reviews(2)</a>
 							<p class="prod-description">Featuring billions of colours in cool and warm tones, integrate this new bulb into your home for combine it with our other smart home products!</p>
-							<a href="#" class="quantity-btn">Quantity</a>
+							<a href="#" id="minus">-</a>
+							<a href="#" id="quantity"> 0 </a>
+							<a href="#" id="add">+</a>
 							<a href="#" class="add-cart-button">Add to Cart</a>
 						</div>
+					</div>
 
 				</div>
 
@@ -184,7 +189,7 @@
 
 <!-- product details -->
 
-			<div class="row" id="footer-example">
+		<div class="row" id="footer-example">
 			<div class="footer-left">
 				<label for="fname">SIGN UP FOR OUR NEWSLETTER </label> <br>
 				<input type="text" id="fname" name="fname" placeholder="Email Address">
@@ -196,8 +201,8 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<img src="img/socials.png">
-				<p>PRODUCTS     |     SUPPORT     |     ABOUT     |     LEGAL</p> <!--THIS IS JUST A PLACEHOLDER FOR LINKS LATER-->
+				<a href="#"><img src="img/socials.png"></a>
+				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
 			</div>
 
 
@@ -213,6 +218,5 @@
 			</div>
 		</div> 
 
-</body>
-
+		</body>
 </html>
