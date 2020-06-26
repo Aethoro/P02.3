@@ -1338,14 +1338,14 @@ a {
 
 }
 
-input:checked + label + .write-review { 
+input:not(:checked) + label + .write-review { 
 	display: none;
 	}
 
 input + label:after { 
 	content: " "; 
 }
-input:checked + label:after {
+input:unchecked + label:after {
 	 content: " "; }
 
 #toggle-button {
