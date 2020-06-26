@@ -825,9 +825,9 @@ h2{
 }
 
 .nav-container {
-        position: sticky; 
-        top:0;
-        z-index: +1;
+    position: sticky; 
+    top:0;
+    z-index: +1;
 }
 
 a {
@@ -937,7 +937,31 @@ a {
 }
 
 .search-input{
-	position: relative;
-	bottom: 20px;
-	right: 20px;
+	transition: height 0.5s;
+}
+
+.clicker {
+  display: inline-block;
+}
+
+.clicker.hidden {
+  display: none;
+}
+
+.hiddendiv {
+  width: 0px;
+  overflow: hidden;
+  transition: width 0.5s;
+}
+
+#showdiv1:target ~ ul li a[href="#showdiv1"] {
+  display: none;
+}
+
+#showdiv1:target ~ ul li a[href="#hidediv1"] {
+  display: inline-block;
+}
+
+#showdiv1:target ~ ul li .hiddendiv.nr1 {
+  width: 170px;
 }
