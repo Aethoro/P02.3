@@ -120,11 +120,20 @@ html {
 		flex-basis: auto;
 		width:35%;
 		margin-top: 50px;
+		text-align: left;
+		justify-content: flex-start;
 	}
 
 	.event-column-large {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		flex: 1;
+		flex-basis: auto;
 		width:65%;
 		margin-top: 50px;
+		text-align: left;
+		justify-content: flex-start;
 	}
 
 	.confirmation-info-column{
@@ -175,11 +184,24 @@ html {
 		font-size: 0.8rem;
 	}
 
+	.ghost-column {
+		max-width: 0px;
+	}
+
 	.item-cart-pic {
 		background-color: #A0A0A0;
-
-		width: 80%;
 		margin: 25px 0px;
+	}
+
+	.item-cart-pic {
+		background-color: #A0A0A0;
+		height: 100px;
+		width: 100px;
+		margin: 25px 0px;
+	}
+
+	.item-cart-pic img {
+		width: 100%;
 	}
 
 	.submit-button-column {
@@ -195,12 +217,16 @@ html {
 		flex-direction: row;
 		flex: 1;
 		flex-basis: auto;
-		margin-top: 50px;
+		margin-top: 20px;
+		font-size: 0.8rem;
+		text-align: center;
 	}
 
 	.event-column-large {
-		margin-top: 50px;
+		margin-top: 20px;
 		flex-direction: row;
+		font-size: 0.8rem;
+		text-align: center;
 	}
 
 	.confirmation-info-column{
@@ -279,6 +305,7 @@ html {
 		margin-right: 60px;
 		text-align: left;
 		margin-left: 30px;
+		font-size: 0.8rem;
 	}
 }
 
@@ -374,7 +401,6 @@ i:hover {
 
 .banner-container {
 	display: flex;
-	margin-bottom: 50px;
 	height: 300px;
 	width: 100%;
 	overflow: hidden;
@@ -403,6 +429,7 @@ i:hover {
 
 .homepage-title {
 	padding-left: 20px;
+	margin-top: 40px;
 }
 
 .container .category {
@@ -588,12 +615,12 @@ p {
 }
 
 .event-columns {
-			display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		flex: 1;
-		flex-basis: auto;
-		margin-top: 50px;
+		display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	flex: 1;
+	flex-basis: auto;
+
 }
 .item-pic img {
 	max-width: 500px;
@@ -606,7 +633,7 @@ p {
 }
 
 .event-pic {
-	padding: 50px 0px;
+	padding: 20px 0px;
 
 }
 
@@ -647,6 +674,8 @@ p {
 	max-width: 600px;
 	text-align: left;
 	margin-left: 30px;
+	margin-bottom: 50px;
+	justify-content: flex-start;
 }
 
 .event-date {
@@ -1101,6 +1130,7 @@ a {
 
 .event-itinerary-slot {
 	margin-bottom: 10px;
+	width: 100%;
 }
 
 .event-info {
@@ -1108,14 +1138,12 @@ a {
 }
 
 .event-image {
-	max-width: 300px;
-	max-height: 400px;
 	margin: 1.5rem;
 }
 
 .event-image img {
 	width: 650px;
-	height: 400px;
+	max-width: 100%;
 }
 
 
