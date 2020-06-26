@@ -135,6 +135,10 @@ html {
 		width: 360px;
 		margin: 45px 30px;
 	}
+	.category {
+		flex: 1 1 auto;
+	}
+
 }
 
 @media (max-width: 30em) {
@@ -262,29 +266,29 @@ html {
 }
 
 .container .featured-product {
-	height: 200px;
-	padding: 20px 20px;
+	height: 300px;
 	margin: 10px 10px;
+	text-align: center;
+}
+.featured {
+	height: 300px;
+	width:300px;
+
 }
 
-.container .featured-product:nth-of-type(even) {
-  background-color: #333;
+.featured:hover {
+	border: 2px solid black;
 }
-.container .featured-product:nth-of-type(odd) {
-  background-color: #AAA;
+
+.gallery-pic {
+	height: 200px;
+	width:200px;
 }
 
 .container .gallery {
 	height: 200px;
-	padding: 20px 20px;
 	margin: 10px 10px;
-}
-
-.container .gallery:nth-of-type(even) {
-  background-color: #333;
-}
-.container .gallery:nth-of-type(odd) {
-  background-color: #AAA;
+	text-align: center;
 }
 
 .container {
@@ -300,6 +304,99 @@ i {
 
 i:hover {
 	color: #D0FEFC;
+}
+
+.stars i{
+	color: black;
+}
+
+#star-rating {
+	justify-content: left;
+}
+
+.review {
+	margin: 10px 0px;
+	flex: 2;
+}
+
+.review-container {
+	padding: 10px 0px;
+}
+
+.review-info {
+	position: relative;
+	right: 20;
+}
+
+.banner-container {
+	display: flex;
+	margin-bottom: 50px;
+	height: 300px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.banner-video video {
+	position: relative;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.banner-video {
+	width: 100%;
+	height: 100%;
+}
+
+.homepage-title {
+	padding-left: 20px;
+}
+
+.container .category {
+	height: 200px;
+	text-align: center;
+	margin: 50px 10px;
+}
+
+.product-category-container {
+	margin-bottom: 200px;
+	padding-top: 50px;
+}
+
+.category img {
+	width: 200px;
+	height: 200px;
+}
+
+.category-pic:hover {
+	border: 2px solid black;
+}
+
+.column {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex: 1;
+	flex-basis: auto;
+	justify-content: space-between;
+}
+
+.small-pic {
+	max-width: 75px;
+	max-height: 75px;
+}
+
+.side-pics img {
+	max-width: 75px;
+	max-height: 75px;
+}
+
+.side-pics {
+	background-color: #A0A0A0;
+	width: 75px;
+	height: 75px;
+	margin: 25px 0px;
+	margin-right: 25px;
 }
 
 .container {
@@ -361,6 +458,7 @@ i:hover {
 
 
 .title {
+	padding-top: 50px;
 	text-align: center;
 	font-weight: lighter;
 }
@@ -371,7 +469,8 @@ p {
 
 .category-name {
 	position: relative;
-	top: 150px;
+	text-align: center;
+
 }
 
 .light-grid {
@@ -419,6 +518,10 @@ p {
 	padding-left: 20px;
 }
 
+.item-detail-info i {
+	color: black;
+}
+
 .quick-view-btn  {
 	position: relative;
 	text-decoration: none;
@@ -435,22 +538,22 @@ p {
 }
 
 .path {
+	padding: 50px 0px;
 	font-weight: lighter;
 	text-align: left;
 }
 
-.small-pic {
-	background-color: #A0A0A0;
-	width: 75px;
-	height: 75px;
-	margin: 25px 0px;
-}
-
 .item-pic {
 	background-color: #A0A0A0;
-	height: 500px;
-	width: 500px;
+	max-height: 500px;
+	max-width: 500px;
 	margin: 25px 0px;
+	overflow: hidden;
+}
+
+.item-pic img {
+	max-width: 500px;
+	max-height: 500px;
 }
 
 .event-pic {
@@ -482,6 +585,24 @@ p {
 	margin-bottom: 20px;
 }
 
+.cart-name-column {
+	width: 20%;
+	text-align: center;
+	justify-content: center;
+}
+
+.cart-quant-column, .cart-price-column, .cart-pic-column {
+	width: 10%;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.event-description {
+	max-width: 600px;
+	text-align: left;
+	margin-left: 30px;
+}
 
 .event-date {
 	text-align: right;
@@ -530,7 +651,6 @@ p {
 #nav-example {
 	background-color:#313639 ;
 	align-items: center;
-	margin-bottom: 20px;
 	padding: 30px 0px;
 }
 
@@ -631,8 +751,7 @@ h2{
 
 .prod-details {
 	margin: 10px 0px;
-	padding: 50px 50px;
-	border: 2px solid grey;
+	border: 2px solid white;
 }
 
 .write-review-btn {
@@ -669,6 +788,11 @@ h2{
 	margin-top: 5px;
 	margin-bottom: 15px;
 	display:inline-block;
+}
+
+.review-pic img {
+	width: 75px;
+	height: 75px;
 }
 
 .review-row1 {
@@ -721,14 +845,9 @@ h2{
 	margin-top: 0;
 }
 
-.banner {
-	background-color: #A0A0A0;
-	height: 300px;
-	color: black;
-	text-align: center;
-	align-content: center;
-	justify-content: center;
-	width:100%;
+.banner-image {
+  width: 100%;
+  height: auto;
 }
 
 .featured-name {
@@ -738,9 +857,17 @@ h2{
 }
 
 .item-detail-info {
-	background-color: #E0E0E0 ;
-	margin: 25px 0px;
+	margin: 25px 10px;
 	height: 500px;
+	width: auto;
+}
+
+.prod-description {
+	border: 2px solid white;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+
 }
 
 .about-section {
