@@ -1338,8 +1338,9 @@ a {
 
 }
 
-input:checked + label + div { 
-	display: none; }
+input:checked + label + .write-review { 
+	display: none;
+	}
 
 input + label:after { 
 	content: " "; 
@@ -1403,6 +1404,11 @@ input:checked + label:after {
     padding: 20px 20px;
     text-align: center;
 }
+#read-more {
+	color: #97C6F7;
+}
+
+
 
 
 
