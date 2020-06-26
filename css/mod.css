@@ -1403,6 +1403,11 @@ input:checked + label:after {
     padding: 20px 20px;
     text-align: center;
 }
+#read-more {
+	color: #97C6F7;
+}
+
+
 
 
 

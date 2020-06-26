@@ -14,26 +14,49 @@
 		<!-- START OF HEADER BAR MODULE -->
 		<div class="nav-container">
 
-		<div class="row" id="nav-example">
-				<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
+			<div class="row" id="nav-example">
+					<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
 
-				<nav>
-					<ul class="nav_link_example">
-						<li><a href="productCategory.html">SHOP</a></li>
-						<li><a href="events.html">EVENTS</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
+					<nav>
+						<ul class="nav_link_example">
+							<li><a href="productCategory.html">SHOP</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+
+					<div id="showdiv1"></div>
+
+					<ul class="nav_link_icons">
+						
+						<li>
+							<div class="hiddendiv nr1">
+								<input type="search" placeholder="Search" class="search-input">
+							</div>
+						</li>
+					  	<li>
+					  		<a href="#showdiv1" class="clicker" tabindex="1">
+					  			<i class="fas fa-search clicker">
+					  				
+					  			</i>
+					  		</a>
+					  	<a href="#hidediv1" class="clicker hidden" tabindex="1">
+					  		<i class="fas fa-search clicker">
+					  		</i>
+					  	</a>
+					  </li>
+					  	<li>
+					  		<a href="cart.html">
+					  			<i class="fas fa-shopping-cart">	
+					  			</i>
+					  		</a>
+					  	</li>
 					</ul>
-				</nav>
 
+			</div> 
 
-				<ul class="nav_link_icons">
-					<li><a href="search.html"><i class="fas fa-search"></i></li>
-					<li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-				</ul>
-		</div> 
-
-	</div><!-- END OF HEADER BAR MODULE -->
+		</div><!-- END OF HEADER BAR MODULE -->
 
 
 <!-- product details -->
@@ -85,11 +108,14 @@
 								<i class="fa fa-star" aria-hidden="true"></i> (2)
 							</a>
 							<p class="prod-description">Recently awarded best Smart Light by WIRED, the Level Bulb is a modern, powerful bulb for every space. With one TRILLION colours plus massive cool to warm white range, the Level Bulb can reach a blinding 1100 lumens. Add endless smart integrations for better gaming, working, and more!</p>
-							<a href="#" class="quantity-btn">Quantity</a>
+							<a href="#" id="minus">-</a>
+							<a href="#" id="quantity"> 0 </a>
+							<a href="#" id="add">+</a>
 							<a href="#" class="add-cart-button">Add to Cart</a>
 						</div>
 
 				</div>
+				<section id="review">
 
 				<p class="sub-titles">DETAILS</p>
 
@@ -118,7 +144,7 @@
 
 <!-- START OF REVIEW SECTION MODULE -->
 
-<section id="review">
+
 
 	<div class="container"> <!-- start of container div -->
 		<p class="sub-titles">Reviews</p>
