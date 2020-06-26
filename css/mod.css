@@ -150,10 +150,11 @@ html {
 	}
 
 	.checkout-summary{
-		background-color: #A0A0A0;
+		background-color: white;
 		height: 330px;
 		width: 360px;
 		margin: 45px 30px;
+		border: 2px solid grey;
 	}
 	.category {
 		flex: 1 1 auto;
@@ -644,6 +645,11 @@ p {
 	margin-left: 30px;
 }
 
+.item-summary-pic img {
+	height: 75px;
+	width: 75px;
+}
+
 .speaker-pic {
 	height: 125px;
 	width: 125px;
@@ -809,6 +815,7 @@ h2{
 
 .checkout-summary-total-text{
 	width:60%;
+
 }
 
 .checkout-summary-total-price{
@@ -1073,8 +1080,13 @@ a {
 
 .thanks {
 	background-color: #f8f8f8;
-	width: 300px;
+	width: 400px;
 	height:300px;
+}
+
+.thanks img {
+	width: 400px;
+	height: 300px;
 }
 
 .row-checkout-titles {
@@ -1272,7 +1284,6 @@ a {
 
 }
 
-
 .clicker {
   display: inline-block;
 }
@@ -1298,3 +1309,82 @@ a {
 #showdiv1:target ~ ul li .hiddendiv.nr1 {
   width: 170px;
 }
+
+
+.write-review {
+	background-color: white;
+	position: absolute;
+	margin-top: 10px; 
+	border: 1px solid black; 
+	max-width: 500px; 
+	max-height: 800px;
+    padding: 20px 20px;
+    text-align: center;
+    z-index: +1;
+    top: 1425px;
+ 
+}
+
+.write-review i {
+	color: black;
+	padding: 25px 10px;
+	border: 1px solid white;
+
+
+}
+
+.write-review i:hover, i:focus {
+	border: 1px solid black;
+
+}
+
+input:checked + label + div { 
+	display: none; }
+
+input + label:after { 
+	content: " To Close Box"; 
+}
+input:checked + label:after {
+	 content: " To Write Review"; }
+
+#toggle-button {
+    background-color: #9CEDEB;
+    border-radius: 4px;
+    font-size: 16px;
+    display: inline-block;
+    padding: 2px 5px;
+    cursor: pointer;
+} /* used https://stackoverflow.com/questions/11023816/toggle-divs-without-using-javascript to help with this portion */
+
+#add-box {
+	padding: 15px 20px;
+	background-color: grey;
+	border: 3px solid white;
+}
+
+#add-box:hover {
+	padding: 15px 20px;
+	background-color: white;
+	border: 3px solid grey;
+}
+
+
+#submit-review {
+	padding: 10px 20px;
+
+	color: black;
+
+		border: 2px solid #9CEDEB;
+	background-color: white;
+}
+
+#submit-review:hover {
+	border: 2px solid white;
+		background-color: #9CEDEB;
+}
+
+
+
+
+
+

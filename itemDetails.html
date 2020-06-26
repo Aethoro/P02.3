@@ -124,7 +124,40 @@
 
 	<div class="container"> <!-- start of container div -->
 		<p class="sub-titles">Reviews</p>
-		<a href="#" class="write-review-btn">write a review</a>
+
+		
+		<input type="checkbox" style="display: none" id="cb">
+		<label id="toggle-button"for="cb">Click Here</label>
+		<div class="write-review">
+				<h2>Write a Review!</h2>
+				<div class="row">
+					<h3>Select Star Rating: </h3>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<div class="row">
+					<label for="title">Title of Review</label>
+					<input type="text" name="title">
+				</div>
+				<div class="row">
+					<label for="title">Review</label>
+					<input type="text" name="title" id="review-box">
+				</div>
+				<div class="row">
+					<label for="title">Name of Reviewer</label>
+					<input type="text" name="title">
+				</div>
+				<div class="row">
+					<p>Add Image</p>
+					<p id="add-box">+</p>
+				</div>
+				<a href="#" id="submit-review">Submit Review</a>
+		</div>
+	
+
 
 		
 
