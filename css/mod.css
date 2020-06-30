@@ -21,6 +21,23 @@ html {
 	}
 }
 
+@media (max-width: 722px) {
+	.nav_link_icons {
+		margin: 0rem;
+		padding-left: 0rem;
+	}
+
+	.nav_link_example {
+		margin: 0.5rem 0rem;
+	}
+}
+
+@media (max-width: 552px) {
+	.nav_link_example {
+		font-size: 0.8rem;
+	}
+}
+
 @media (min-width: 30em) {
 	.row {
 		display: flex;
@@ -250,6 +267,8 @@ html {
 		width: 360px;
 		margin: 30px 0px;
 	}
+
+	
 
 }
 
@@ -725,6 +744,8 @@ p {
 	text-decoration: none;
 	list-style: none;
 	text-align: center;
+	position: relative;
+	bottom: 5px;
 }
 
 .nav_link_icons li{
