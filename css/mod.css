@@ -1394,7 +1394,7 @@ input:unchecked + label:after {
     position:fixed;
     top:300px;
     right:50%; /* this is the trick to make the fixed div appear absolute */
-    height:500px;
+    height:400px;
     width:450px;
     margin-right:-225px; /*Must be half of container width plus desired positioning*/
     z-index: +2;
@@ -1407,6 +1407,15 @@ input:unchecked + label:after {
 #read-more {
 	color: #97C6F7;
 }
+
+.close-button {
+	text-align: right;
+}
+
+.close-button label{
+	padding-right: 10px;
+}
+
 
 
 
