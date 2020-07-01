@@ -602,8 +602,16 @@ p {
 	text-align: left;
 	top: 325px;
 	padding-left: 30px;
-
 }
+
+.sale-price {
+	position: absolute;
+	text-align: left;
+	top: 325px;
+	padding-left: 30px;
+	color: red;
+}
+
 .grid i {
 	position: relative;
 	color: black;
@@ -620,6 +628,18 @@ p {
 	text-decoration: none;
 	padding: 5px 10px;
 	background-color:#9CEDEB;
+	border: 2px solid #9CEDEB;
+	color: black;
+	transition: 0.3s ease;
+	top: 355px;
+	right: 30px;
+}
+
+.out-btn  {
+	position: absolute;
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color:#grey;
 	border: 2px solid #9CEDEB;
 	color: black;
 	transition: 0.3s ease;
