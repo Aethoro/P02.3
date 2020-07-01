@@ -585,29 +585,30 @@ p {
 	margin: 20px 10px;
 	text-align: center;
 	color: black;
-	height: 365px;
-
+	height: 410px;
+	background-color: white;
 }
 
 .prod-name {
 	position: absolute;
 	text-align: left;
-	padding-left: 10px;
-	top: 230px;
+	padding-left: 30px;
+	top: 290px;
+	font-weight: lighter;
 }
 
 .price {
 	position: absolute;
 	text-align: left;
-	top: 265px;
+	top: 325px;
 	padding-left: 30px;
 
 }
 .grid i {
 	position: relative;
 	color: black;
-	top: 20px;
-	right: 90px;
+	top: 70px;
+	right: 80px;
 }
 
 .item-detail-info i {
@@ -618,15 +619,16 @@ p {
 	position: absolute;
 	text-decoration: none;
 	padding: 5px 10px;
-	background-color:#606060;
-	color: white;
+	background-color:#9CEDEB;
+	border: 2px solid #9CEDEB;
+	color: black;
 	transition: 0.3s ease;
-	top: 300px;
+	top: 355px;
 	right: 30px;
 }
 
 .quick-view-btn:hover  {
-	background-color:#C0C0C0;
+	background-color:white;
 	color: black;
 }
 
