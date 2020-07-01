@@ -2,9 +2,11 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>P02 Test</title>
+		<title>Events</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/mod.css">
+		<script src="https://kit.fontawesome.com/4346ed3535.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 	</head>
 
@@ -13,28 +15,79 @@
 		<!-- START OF HEADER BAR MODULE -->
 		<div class="nav-container">
 
-		<div class="row" id="nav-example">
-				<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
-				<nav>
-					<ul class="nav_link_example">
-						<li><a href="productCategory.html">SHOP</a></li>
-						<li><a href="events.html">EVENTS</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
+			<div class="row" id="nav-example">
+					<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
+
+					<nav>
+						<ul class="nav_link_example">
+							<li><a href="productCategory.html">SHOP</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+
+					<div id="showdiv1"></div>
+
+					<ul class="nav_link_icons">
+						
+						<li>
+							<div class="hiddendiv nr1">
+								<input type="search" placeholder="Search" class="search-input">
+							</div>
+						</li>
+					  	<li>
+					  		<a href="#showdiv1" class="clicker" tabindex="1">
+					  			<i class="fas fa-search clicker">
+					  				
+					  			</i>
+					  		</a>
+					  	<a href="#hidediv1" class="clicker hidden" tabindex="1">
+					  		<i class="fas fa-search clicker">
+					  		</i>
+					  	</a>
+					  </li>
+					  	<li>
+					  		<a href="cart.html">
+					  			<i class="fas fa-shopping-cart">	
+					  			</i>
+					  		</a>
+					  	</li>
 					</ul>
-				</nav>
+
+			</div> 
+
+		</div><!-- END OF HEADER BAR MODULE -->
 
 
-				<ul class="nav_link_icons"> 
-					<li class="search-icon">
-						<input type="search" placeholder="Search" class="search-input">
-						<a href="#" id="search-icon"><img src="img/search.png"></a>
-					</li>
-					<li><a href="cart.html"><img src="img/cart.png"></a></li>
-				</ul>
-		</div> 
+<!-- START OF EVENT MODULE -->
+		
+		<div class="container"> <!-- start of container -->
 
-	</div>
+			<div class="row">
+				<h1 class="title">EVENTS</h1>
+
+			</div>
+
+			<div class="row">
+
+					<div class="event-pic">
+						<a  href="eventDetails.html"> 
+							<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Contextual_Z_Strip_-_2_1500x.png?v=1570097624">
+						</a>
+					</div>
+
+				<div class="column event-description">
+						<h2>Home Show</h2>
+						<p class="event-date">August 25th, 2020</p>
+						<p>Join us for an evening full of showcases focused on our new products integrated into any room in your home! Whether you want to enhance your gaming and entertainment setup, or want to add a slight touch of colour to change the ambience of your room every now and then, this is the show for you! There will be multiple exhibitions showcasing how you can use all of our products in the most subtle ways while hiding all the wires. No one would be able to tell! Tickets are running fast!</p>
+						<a id="read-more" href="eventDetails.html">Read more...</a>
+				</div>
+
+			</div>
+
+		</div> <!-- end of container -->
+<!-- END OF EVENT MODULE -->
 
 <!-- START OF EVENT MODULE -->
 		
@@ -42,20 +95,15 @@
 
 			<div class="row">
 
-				<div class="column">
 					<a class="event-pic" href="eventDetails.html">
-						<p>Event Photo</p>
+						<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Its_Night_and_Day_900x.jpg?v=1570096918">
 					</a>
-				</div>
 
-
-				<div class="column">
-					<div class="event-description">
-						<h2>Event Title</h2>
-						<p class="event-date">Month, Day, Year</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget risus tortor. Curabitur pharetra imperdiet neque quis convallis. Nulla varius leo id odio condimentum, sed tempus augue porttitor. Consectetur adipiscing elit. Mauris eget risus tortor. Curabitur pharetra imperdiet neque quis convallis. Nulla varius leo id odio condimentum, sed tempus augue porttitor. </p><br>
-						<a href="eventDetails.html">Read more...</a>
-					</div>
+				<div class="column event-description">
+						<h2>Full Lumin Home Lottery</h2>
+						<p class="event-date">October 10th, 2020</p>
+						<p>With the chilly weather on the way, stay cozy for a day at our unveiling of the new exterior lighting products! Whether you want to light up your pool to create a whimsical feel, or turn it into an epic pool party that changes colours based on your music, there are so many different options about how you can decorate the exterior of your home! And that's not all! You can also enter to win a draw for a house decked out with all of our new products!</p>
+						<a id="read-more" href="eventDetails.html">Read more...</a>
 				</div>
 
 			</div>
@@ -64,50 +112,20 @@
 <!-- END OF EVENT MODULE -->
 
 <!-- START OF EVENT MODULE -->
+		
 		<div class="container"> <!-- start of container -->
 
 			<div class="row">
 
-				<div class="column">
 					<a class="event-pic" href="eventDetails.html">
-						<p>Event Photo</p>
+						<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Kickass_colour_900x.jpg?v=1570098213">
 					</a>
-				</div>
 
-
-				<div class="column">
-					<div class="event-description">
-						<h2>Event Title</h2>
-						<p class="event-date">Month, Day, Year</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget risus tortor. Curabitur pharetra imperdiet neque quis convallis. Nulla varius leo id odio condimentum, sed tempus augue porttitor. Consectetur adipiscing elit. Mauris eget risus tortor. Curabitur pharetra imperdiet neque quis convallis. Nulla varius leo id odio condimentum, sed tempus augue porttitor. </p><br>
-						<a href="eventDetails.html">Read more...</a>
-					</div>
-				</div>
-
-			</div>
-
-		</div> <!-- end of container -->
-<!-- END OF EVENT MODULE -->
-
-<!-- START OF EVENT MODULE -->
-		<div class="container"> <!-- start of container -->
-
-			<div class="row">
-
-				<div class="column">
-					<a class="event-pic" href="eventDetails.html">
-						<p>Event Photo</p>
-					</a>
-				</div>
-
-
-				<div class="column">
-					<div class="event-description">
-						<h2>Event Title</h2>
-						<p class="event-date">Month, Day, Year</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget risus tortor. Curabitur pharetra imperdiet neque quis convallis. Nulla varius leo id odio condimentum, sed tempus augue porttitor. Consectetur adipiscing elit. Mauris eget risus tortor. Curabitur pharetra imperdiet neque quis convallis. Nulla varius leo id odio condimentum, sed tempus augue porttitor. </p><br>
-						<a href="eventDetails.html">Read more...</a>
-					</div>
+				<div class="column event-description">
+						<h2>Holiday Convention</h2>
+						<p class="event-date">December 19th 2020</p>
+						<p>As we approach the Christmas season, we are partnering with three other smart home lighting companies to bring you a full Christmas themed exhibition for you and your family to enjoy! We will also have booths that showcase our products used in the exhibitions and will have special packages at exclusive pricing available! Don't miss out on this one!</p>
+						<a id="read-more" href="eventDetails.html">Read more...</a>
 				</div>
 
 			</div>
@@ -129,8 +147,8 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<img src="img/socials.png">
-				<p>PRODUCTS     |     SUPPORT     |     ABOUT     |     LEGAL</p> <!--THIS IS JUST A PLACEHOLDER FOR LINKS LATER-->
+				<a href="#"><img src="img/socials.png"></a>
+				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
 			</div>
 
 
@@ -146,6 +164,5 @@
 			</div>
 		</div> 
 
-</body>
-
+		</body>
 </html>

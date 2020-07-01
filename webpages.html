@@ -2,9 +2,11 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>P02 Test</title>
+		<title>Welcome to Lumin!</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/mod.css">
+		<script src="https://kit.fontawesome.com/4346ed3535.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 	</head>
 
@@ -13,98 +15,153 @@
 		<!-- START OF HEADER BAR MODULE -->
 		<div class="nav-container">
 
-		<div class="row" id="nav-example">
-				<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
+			<div class="row" id="nav-example">
+					<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
 
-				<nav>
-					<ul class="nav_link_example">
-						<li><a href="productCategory.html">SHOP</a></li>
-						<li><a href="events.html">EVENTS</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
+					<nav>
+						<ul class="nav_link_example">
+							<li><a href="productCategory.html">SHOP</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+
+					<div id="showdiv1"></div>
+
+					<ul class="nav_link_icons">
+						
+						<li>
+							<div class="hiddendiv nr1">
+								<input type="search" placeholder="Search" class="search-input">
+							</div>
+						</li>
+					  	<li>
+					  		<a href="#showdiv1" class="clicker" tabindex="1">
+					  			<i class="fas fa-search clicker">
+					  				
+					  			</i>
+					  		</a>
+					  	<a href="#hidediv1" class="clicker hidden" tabindex="1">
+					  		<i class="fas fa-search clicker">
+					  		</i>
+					  	</a>
+					  </li>
+					  	<li>
+					  		<a href="cart.html">
+					  			<i class="fas fa-shopping-cart">	
+					  			</i>
+					  		</a>
+					  	</li>
 					</ul>
-				</nav>
 
+			</div> 
 
-				<ul class="nav_link_icons"> 
-					<li class="search-icon">
-						<input type="search" placeholder="Search" class="search-input">
-						<a href="#" id="search-icon"><img src="img/search.png"></a>
-					</li>
-					<li><a href="cart.html"><img src="img/cart.png"></a></li>
-				</ul>
+		</div><!-- END OF HEADER BAR MODULE -->
+
+		<div class="banner-container">
+
+			<div class="banner-video">
+				<video src="https://cdn.shopify.com/s/files/1/0263/7873/1625/files/Trillions_Of_Colours_Test_1.mp4?788" loop muted playsinline autoplay data-video="0"></video>
+			</div>
+
 		</div>
 
+<div class="container">
 
-
-	</div><!-- END OF HEADER BAR MODULE -->
+		<h2 class="homepage-title">Featured Products</h2>
 
 		<div class="row">
 
-			<a class="banner" href="itemDetails.html">
-				<p>Banner photo</p>
-			</a>
+			<div class="featured-product">
+				<a href="itemDetails.html">
+					<img class="featured" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_900x.jpg?v=1570090207">
+				<a href="itemDetails.html">
+			</div>
+
+			<div class="featured-product">
+				<a href="itemDetails2.html">
+					<img class="featured" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+				</a>
+			</div>
+
+			<div class="featured-product">
+				<a href="itemDetails3.html">
+					<img class="featured" src="https://cdn.shopify.com/s/files/1/0219/0638/products/PDP_Hero_-_Product_hero_1080x.jpg?v=1591079434">
+				</a>
+			</div>
 
 		</div>
 
-		<div class="container"> <!-- start of container div -->
-
-		<h2>Featured Products</h2>
-
+		<h2 class="homepage-title">Gallery</h2>
 
 		<div class="row">
 
-			<div class="column">
-				<a href="itemDetails.html" class="light2"></a>
-				<a href="itemDetails.html" class="category-link"><p class="featured-name">product name</p></a>
+			<div class="gallery">
+				<a href="itemDetails.html">
+					<img class="gallery-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/files/Polychrome_Tech_46506333-774d-4f4e-9980-ff2490ca3774_1080x.jpg?v=1570096898">
+				</a>
+
 			</div>
 
-			<div class="column">
-				<a href="itemDetails.html" class="dark2"></a>
-				<a href="itemDetails.html" class="category-link"><p class="featured-name">product name</p></a>
+			<div class="gallery">
+				<a href="itemDetails.html">
+					<img class="gallery-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/files/Bias_Lighting_1_1080x.png?v=1570098404">
+				</a>
+
 			</div>
 
-			<div class="column">
-				<a href="itemDetails.html" class="light2"></a>
-				<a href="itemDetails.html" class="category-link"><p class="featured-name">product name</p></a>
+			<div class="gallery">
+				<a href="itemDetails.html">
+					<img href="#" class="gallery-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/files/Set_the_Scene_1080x.jpg?v=1570098208">
+				</a>
+
+			</div>
+
+			<div class="gallery">
+				<a href="itemDetails.html">
+					<img class="gallery-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/files/edited_1_1080x.jpg?v=1586840875">
+				</a>
+
 			</div>
 
 		</div>
-
-		<h2>Gallery</h2>
 
 		<div class="row">
 
-			<div class="column">
-				<div class="light2">
-				</div>
+			<div class="gallery">
+				<a href="itemDetails.html">
+					<img class="gallery-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/files/Polychrome_Tech_46506333-774d-4f4e-9980-ff2490ca3774_1080x.jpg?v=1570096898">
+				</a>
+
 			</div>
 
-			<div class="column">
-				<div class="dark2">
-				</div>
+			<div class="gallery">
+				<a href="itemDetails.html">
+					<img class="gallery-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/files/Bias_Lighting_1_1080x.png?v=1570098404">
+				</a>
+
 			</div>
 
-			<div class="column">
-				<div class="light2">
-				</div>
+			<div class="gallery">
+				<a href="itemDetails.html">
+					<img class="gallery-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/files/Set_the_Scene_1080x.jpg?v=1570098208">
+				</a>
+
 			</div>
 
-			<div class="column">
-				<div class="dark2">
-				</div>
-			</div>
+			<div class="gallery">
+				<a href="itemDetails.html">
+					<img class="gallery-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/files/edited_1_1080x.jpg?v=1586840875">
+				</a>
 
-			<div class="column">
-				<div class="light2">
-				</div>
 			</div>
 
 		</div>
 
-	</div> <!-- end of container div -->
+	</div>
 
-			<div class="row" id="footer-example">
+		<div class="row" id="footer-example">
 			<div class="footer-left">
 				<label for="fname">SIGN UP FOR OUR NEWSLETTER </label> <br>
 				<input type="text" id="fname" name="fname" placeholder="Email Address">
@@ -116,8 +173,8 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<img src="img/socials.png">
-				<p>PRODUCTS     |     SUPPORT     |     ABOUT     |     LEGAL</p> <!--THIS IS JUST A PLACEHOLDER FOR LINKS LATER-->
+				<a href="#"><img src="img/socials.png"></a>
+				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
 			</div>
 
 
@@ -133,6 +190,5 @@
 			</div>
 		</div> 
 
-	</body>
+		</body>
 </html>
-

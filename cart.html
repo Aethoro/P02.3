@@ -2,9 +2,11 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>P02 Test</title>
+		<title>Cart</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/mod.css">
+		<script src="https://kit.fontawesome.com/4346ed3535.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 	</head>
 
@@ -13,28 +15,50 @@
 		<!-- START OF HEADER BAR MODULE -->
 		<div class="nav-container">
 
-		<div class="row" id="nav-example">
-				<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
-				<nav>
-					<ul class="nav_link_example">
-						<li><a href="productCategory.html">SHOP</a></li>
-						<li><a href="events.html">EVENTS</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
+			<div class="row" id="nav-example">
+					<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
+
+					<nav>
+						<ul class="nav_link_example">
+							<li><a href="productCategory.html">SHOP</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+
+					<div id="showdiv1"></div>
+
+					<ul class="nav_link_icons">
+						
+						<li>
+							<div class="hiddendiv nr1">
+								<input type="search" placeholder="Search" class="search-input">
+							</div>
+						</li>
+					  	<li>
+					  		<a href="#showdiv1" class="clicker" tabindex="1">
+					  			<i class="fas fa-search clicker">
+					  				
+					  			</i>
+					  		</a>
+					  	<a href="#hidediv1" class="clicker hidden" tabindex="1">
+					  		<i class="fas fa-search clicker">
+					  		</i>
+					  	</a>
+					  </li>
+					  	<li>
+					  		<a href="cart.html">
+					  			<i class="fas fa-shopping-cart">	
+					  			</i>
+					  		</a>
+					  	</li>
 					</ul>
-				</nav>
 
+			</div> 
 
-				<ul class="nav_link_icons"> 
-					<li class="search-icon">
-						<input type="search" placeholder="Search" class="search-input">
-						<a href="#" id="search-icon"><img src="img/search.png"></a>
-					</li>
-					<li><a href="cart.html"><img src="img/cart.png"></a></li>
-				</ul>
-		</div> 
+		</div><!-- END OF HEADER BAR MODULE -->
 
-	</div>
 
 	<!-- START OF CART MODULE -->
 
@@ -42,23 +66,19 @@
 
 				<div class="row">
 					<div class="column">
-					</div>
-					<div class="column">
 						<h2 class="font2">CART</h2>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="column">
-					</div>
 					<div class="column cart-pic-column">
 						<h3>PRODUCT</h2>
 					</div>
 					<div class="column cart-name-column">
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
 					<div class="column cart-quant-column">
 						<h3>QUANITY</h3>
@@ -71,84 +91,81 @@
 				<hr>
 
 				<div class="row">
-					<div class="column">
-					</div>
 					<div class="column cart-pic-column">
-						<div class="item-cart-pic"><p>Product Photo</p></div>
+						<div class="item-cart-pic">
+							<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+						</div>
 					</div>
 					<div class="column cart-name-column">
-						<p class="cart-text">Item 1</p>
+						<p class="cart-text">Whimsical Bulb</p>
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
 					<div class="column cart-quant-column">
 						<p>1</p>
 					</div>
 					<div class="column cart-price-column">
-						<h3>$$</h3>
+						<h3>$45</h3>
 					</div>
 				</div>
 
 				<hr>
 
 				<div class="row">
-					<div class="column">
-					</div>
 					<div class="column cart-pic-column">
-						<div class="item-cart-pic"><p>Product Photo</p></div>
+						<div class="item-cart-pic">
+							<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+						</div>
 					</div>
 					<div class="column cart-name-column">
-						<p class="cart-text">Item 2</p>
+						<p class="cart-text">Candle Bulb</p>
 					</div>
-					<div class="column">
+
+					<div class="column ghost-column">
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
 					<div class="column cart-quant-column">
 						<p>1</p>
 					</div>
 					<div class="column cart-price-column">
-						<h3>$$</h3>
+						<h3>$45</h3>
 					</div>
 				</div>
 
 				<hr>
 
 				<div class="row">
-					<div class="column">
-					</div>
 					<div class="column cart-pic-column">
 					</div>
 					<div class="column cart-name-column">
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
 					<div class="column cart-quant-column">
 						<h3>SUB-TOTAL</h3>
 					</div>
 					<div class="column cart-price-column">
-						<h3>$$</h3>
+						<h3>$90</h3>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="column">
-					</div>
 					<div class="column cart-pic-column">
 					</div>
 					<div class="column cart-name-column">
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
-					<div class="column">
+					<div class="column ghost-column">
 					</div>
 					<div class="column cart-quant-column">
 					</div>
-					<div class="column cart-price-column">
+					<div class="column submit-button-column">
 						<a href="checkout.html" id="submit-button">CHECKOUT</a>
 					</div>
 				</div>
@@ -170,8 +187,8 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<img src="img/socials.png">
-				<p>PRODUCTS     |     SUPPORT     |     ABOUT     |     LEGAL</p> <!--THIS IS JUST A PLACEHOLDER FOR LINKS LATER-->
+				<a href="#"><img src="img/socials.png"></a>
+				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
 			</div>
 
 
@@ -187,6 +204,5 @@
 			</div>
 		</div> 
 
-</body>
-
+		</body>
 </html>
