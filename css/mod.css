@@ -185,6 +185,26 @@ body{
 		margin-right: 10px;
 		margin-bottom: 10px;
 	}
+
+	.about-section {
+		margin: 25px 30px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		max-width: 400px;
+		min-width: 200px;
+	}
+
+	.about-section2 {
+		margin-top: 50px;
+		align-content: center;
+		text-align: center;
+	}
+
+	.about-section2 img {
+		max-height: 300px;
+		max-width: 700px;
+	}
 }
 
 @media (max-width: 30em) {
@@ -221,9 +241,7 @@ body{
 
 	.item-cart-pic {
 		background-color: #A0A0A0;
-		height: 100px;
-		width: 100px;
-		margin: 25px 0px;
+		margin: 25px 5px;
 	}
 
 	.item-cart-pic img {
@@ -280,6 +298,25 @@ body{
 		margin-bottom: 10px;
 	}
 
+	.about-section {
+		margin: 25px 20px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		max-width: 400px;
+	}
+
+	.about-section2 {
+		margin-top: 50px;
+		align-content: center;
+		text-align: center;
+	}
+
+	.about-section2 img {
+		max-width: 100%;
+		min-width: 300px;
+	}
+
 }
 
 /*@media(min-width: 1422px) {
@@ -332,9 +369,9 @@ body{
 	}
 
 	.event-description {
-		margin-right: 60px;
+		margin-right: 20px;
 		text-align: left;
-		margin-left: 30px;
+		margin-left: 20px;
 		font-size: 0.8rem;
 	}
 }
@@ -735,7 +772,6 @@ p {
 .event-description {
 	max-width: 600px;
 	text-align: left;
-	margin-left: 30px;
 	margin-bottom: 50px;
 	justify-content: flex-start;
 }
@@ -802,6 +838,7 @@ p {
 	background-color:#313639 ;
 	align-items: center;
 	padding: 20px 0px;
+	width: 100%;
 }
 
 .nav_link_example {
@@ -1027,21 +1064,6 @@ h2{
 
 }
 
-.about-section {
-	margin: 25px 0px;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	height: 300px;
-	max-width: 400px;
-}
-
-.about-section2 {
-	margin-top: 50px;
-	align-content: center;
-	text-align: center;
-}
-
 .faq {
 	margin: 10px 10px;
 	height: 200px;
@@ -1188,6 +1210,7 @@ a {
 	position: absolute;
 	top: 200px;
 	text-align: center;
+	margin: 0px 15px;
 }
 
 .mission h1 {
@@ -1282,11 +1305,6 @@ a {
 .read-more {
 	color: black;
 
-}
-
-.about-section2 img {
-	max-height: 300px;
-	max-width: 700px;
 }
 
 .form {
@@ -1452,7 +1470,7 @@ input:unchecked + label:after {
     position:fixed;
     top:250px;
     right:50%; /* this is the trick to make the fixed div appear absolute */
-    height:400px;
+    height:500px;
     width:450px;
     margin-right:-225px; /*Must be half of container width plus desired positioning*/
     z-index: +2;
