@@ -1196,6 +1196,7 @@ a {
 }
 
 .thanks {
+	text-align: center;
 	background-color: #f8f8f8;
 	width: 400px;
 	height:300px;
@@ -1539,6 +1540,16 @@ input:unchecked + label:after {
 
 .close-button label{
 	padding-right: 10px;
+}
+
+#confirm-check {
+	font-size: 150px;
+	text-align: center;
+	color: #9CEDEB;
+}
+
+.thanks-fonts {
+	font-weight: lighter;
 }
 
 
