@@ -792,8 +792,6 @@ p {
 	color: white;
 }
 
-
-
 .add-cart-button {
 	text-decoration: none;
 	margin-left: 20px;
@@ -802,6 +800,7 @@ p {
 	color: black;
 	border-radius: 5px;
 	transition: 0.3s ease;
+	cursor: pointer;
 }
 
 .add-cart-button:hover {
@@ -1113,13 +1112,14 @@ h2{
 	border-radius: 5px;
 	transition: 0.3s ease;
 	margin-top: 20px;
+	cursor: pointer;
 }
 
 .read-more-button {
 	width: 110px;
 }
 
-.send-message-btn:hover, .read-more-button:hover {
+.send-message-btn:hover, .read-more-button:hover, #toggle-button:hover {
 	background-color: #9CEDEB;
 }
 
@@ -1157,6 +1157,7 @@ a {
 	border-radius: 8px;
 	transition: 0.3s ease;
 	color: black;
+	cursor: pointer;
 }
 
 #submit-button:hover {
@@ -1269,10 +1270,6 @@ a {
 	flex-direction: row;
 	width: 100%;
 	justify-content: center;
-}
-
-.search-input{
-	transition: height 0.5s;
 }
 
 .container-product-list {
@@ -1438,7 +1435,7 @@ a {
 
 }
 
-input:not(:checked) + label + .write-review { 
+input:not(:checked) + label + .review-popup { 
 	display: none;
 	}
 
@@ -1449,12 +1446,14 @@ input:unchecked + label:after {
 	 content: " "; }
 
 #toggle-button {
-    background-color: #9CEDEB;
-    border-radius: 4px;
+    border: 2px solid #9CEDEB;
+    border-radius: 5px;
     font-size: 16px;
     display: inline-block;
-    padding: 2px 5px;
+    padding: 10px 10px;
+    transition: 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
 } /* used https://stackoverflow.com/questions/11023816/toggle-divs-without-using-javascript to help with this portion */
 
 #add-box {
@@ -1498,22 +1497,16 @@ input:unchecked + label:after {
     height:500px;
     width:450px;
     margin-right:-225px; /*Must be half of container width plus desired positioning*/
-    z-index: +2;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     margin-top: 10px; 
 	border: 0px solid black; 
     padding: 20px 20px;
     text-align: center;
+    border-radius: 5px;
+    z-index: +2;
 }
 
-.exit-review{
-	position:fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-	color: #000000;
-}
+
 
 #read-more {
 	color: #97C6F7;
@@ -1521,18 +1514,49 @@ input:unchecked + label:after {
 
 .close-button {
 	text-align: right;
+	cursor: pointer;
 }
 .input-row {
 	margin-bottom: 10px;
+}
+
+.star-input-row {
+	margin-bottom: 10px;
+	padding: 0px 60px;
 }
 
 .close-button label{
 	padding-right: 10px;
 }
 
+input, textarea {
+	border-color: #252525;
+	border: 1px solid;
+	border-radius: 5px;
+	background: none;
+}
 
 
+.search-input{
+	transition: height 0.5s;
+	background: white;
+}
 
+#x-review{
+	background: none;
+	border: 0px;
+	font-size: 2rem;
+	cursor: pointer;
+}
 
-
-
+.exit-review {
+    display: inline-block;
+    cursor: pointer;
+    position:fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 40%;
+}
