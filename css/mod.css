@@ -682,6 +682,7 @@ p {
 	transition: 0.3s ease;
 	top: 355px;
 	right: 30px;
+	border-radius: 5px;
 }
 
 .out-btn  {
@@ -694,6 +695,7 @@ p {
 	transition: 0.3s ease;
 	top: 355px;
 	right: 30px;
+	border-radius: 5px;
 }
 
 .quick-view-btn:hover  {
@@ -790,19 +792,21 @@ p {
 	color: white;
 }
 
+
+
 .add-cart-button {
 	text-decoration: none;
 	margin-left: 20px;
 	padding: 10px 10px;
 	border: 2px solid #9CEDEB;
 	color: black;
-	border-radius: 10px;
+	border-radius: 5px;
 	transition: 0.3s ease;
 }
 
 .add-cart-button:hover {
 	background-color: #9CEDEB;
-	border: 2px solid white;
+	border: 2px solid #9CEDEB;
 	color: #black;
 }
 
@@ -861,8 +865,6 @@ p {
 	color:#9CEDEB;
 }
 
-
-
 .module-section {
 	text-align: left;
 	font-weight: lighter;
@@ -872,7 +874,6 @@ p {
 	width: 100%;
 	justify-content: flex-start;
 	padding-bottom: 20px;
-	
 }
 
 .module-section h2{
@@ -900,16 +901,12 @@ h2{
 	align-items: left;
 }
 
-
-
 .checkout-category-text {
 	text-decoration: underline;
 	font-weight: normal;
 	margin-bottom: 0px;
 	margin-top: 30px;
 }
-
-
 
 .checkout-summary-total-text{
 	width:60%;
@@ -919,8 +916,6 @@ h2{
 .checkout-summary-total-price{
 	width:40%;
 }
-
-
 
 .summary-line{
 	border-top: 2px solid #252525;
@@ -1100,18 +1095,32 @@ h2{
 	height: auto;
 }
 
-.send-message-btn {
+/*.send-message-btn {
 	text-decoration: none;
-	background-color:#E0E0E0 ;
+	background-color:#E0E0E0;
 	padding: 10px 20px;
 	margin-top: 10px;
 	color: black;
 	transition: 0.3s ease;
 	border: 2px solid #E0E0E0;
+}*/
+
+.send-message-btn, .read-more-button {
+	text-decoration: none;
+	padding: 10px 10px;
+	border: 2px solid #9CEDEB;
+	color: black;
+	border-radius: 5px;
+	transition: 0.3s ease;
+	margin-top: 20px;
 }
 
-.send-message-btn:hover {
-	background-color: #A0A0A0;
+.read-more-button {
+	width: 110px;
+}
+
+.send-message-btn:hover, .read-more-button:hover {
+	background-color: #9CEDEB;
 }
 
 #contact-socials {
@@ -1319,6 +1328,22 @@ a {
 
 .footer-links a:hover {
 	color: #9CEDEB;
+}
+
+.footer-links-small{
+	margin-top: 10px;
+}
+
+.footer-links-small a {
+	color: #6C708E;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: 0.3s ease;
+	margin-top: 10px;
+}
+
+.footer-links-small a:hover {
+	color: #868BAF;
 }
 
 .bulb-column {
