@@ -488,8 +488,6 @@ i:hover {
 	height: 100%;
 }
 
-
-
 .banner-video {
 	width: 100%;
 	height: 100%;
@@ -525,24 +523,24 @@ i:hover {
 	max-height: 75px;
 }
 
-#small-pic {
-	max-width: 75px;
-	max-height: 75px;
-}
-
-
-
-#small-pic:clicked {
-	img: url(img/category1.png);
-}
-
 .side-pics img {
 	max-width: 75px;
 	max-height: 75px;
 }
 
+.side-pic1 img {
+	max-width: 75px;
+	max-height: 75px;
+}
+
 .side-pics {
-	background-color: #A0A0A0;
+	width: 75px;
+	height: 75px;
+	margin: 25px 0px;
+	margin-right: 25px;
+}
+
+.side-pic1 {
 	width: 75px;
 	height: 75px;
 	margin: 25px 0px;
@@ -631,12 +629,30 @@ p {
 
 .grid {
 	position: relative;
-	margin: 20px 10px;
+	margin: 20px 5px;
 	text-align: center;
 	color: black;
 	height: 410px;
 	background-color: white;
 	max-width: 300px;
+}
+
+.grid:hover {
+	height: 510px;
+}
+
+.hover-description {
+	visibility: hidden;
+	text-align: left;
+	position: absolute;
+	padding-left: 30px;
+	padding-right: 30px;
+	top: 410px;
+	font-size: small;
+}
+
+.grid:hover .hover-description {
+	visibility: visible;
 }
 
 .prod-name {
@@ -711,11 +727,30 @@ p {
 }
 
 .item-pic {
-	background-color: #A0A0A0;
 	max-height: 500px;
 	max-width: 500px;
 	margin: 25px 0px;
-	overflow: hidden;
+}
+
+.detail-column {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	flex-basis: auto;
+	flex:1;
+	justify-content: space-around;
+
+	max-height: 500px;
+	max-width: 500px;
+	margin: 25px 0px;
+	background: url('https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207');
+	background-repeat: no-repeat;
+	background-size: 500px 500px;
+}
+
+.product-pictures:hover ~ .detail-column {
+	/*background-image: url('https://cdn.shopify.com/s/files/1/0219/0638/products/Downlights_Bitmap_Copy_4_1080x.png?v=1570090207');*/
+	border: 5px solid black;
 }
 
 .event-columns {
@@ -726,6 +761,7 @@ p {
 	flex-basis: auto;
 
 }
+
 .item-pic img {
 	max-width: 500px;
 	max-height: 500px;
@@ -1171,6 +1207,7 @@ a {
 }
 
 .thanks {
+	text-align: center;
 	background-color: #f8f8f8;
 	width: 400px;
 	height:300px;
@@ -1530,6 +1567,11 @@ input:unchecked + label:after {
 	padding-right: 10px;
 }
 
+#confirm-check {
+	font-size: 150px;
+	text-align: center;
+	color: #9CEDEB;
+}
 input, textarea {
 	border-color: #252525;
 	border: 1px solid;
@@ -1537,6 +1579,9 @@ input, textarea {
 	background: none;
 }
 
+.thanks-fonts {
+	font-weight: lighter;
+}
 
 .search-input{
 	transition: height 0.5s;
@@ -1549,6 +1594,11 @@ input, textarea {
 	font-size: 2rem;
 	cursor: pointer;
 }
+
+
+
+
+
 
 .exit-review {
     display: inline-block;
