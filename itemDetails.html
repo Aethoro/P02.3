@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>P02 Test</title>
+		<title>Item Details</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/mod.css">
 		<script src="https://kit.fontawesome.com/4346ed3535.js" crossorigin="anonymous"></script>
@@ -14,26 +14,49 @@
 		<!-- START OF HEADER BAR MODULE -->
 		<div class="nav-container">
 
-		<div class="row" id="nav-example">
-				<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
+			<div class="row" id="nav-example">
+					<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
 
-				<nav>
-					<ul class="nav_link_example">
-						<li><a href="productCategory.html">SHOP</a></li>
-						<li><a href="events.html">EVENTS</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
+					<nav>
+						<ul class="nav_link_example">
+							<li><a href="productCategory.html">SHOP</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+
+					<div id="showdiv1"></div>
+
+					<ul class="nav_link_icons">
+						
+						<li>
+							<div class="hiddendiv nr1">
+								<input type="search" placeholder="Search" class="search-input">
+							</div>
+						</li>
+					  	<li>
+					  		<a href="#showdiv1" class="clicker" tabindex="1">
+					  			<i class="fas fa-search clicker">
+					  				
+					  			</i>
+					  		</a>
+					  	<a href="#hidediv1" class="clicker hidden" tabindex="1">
+					  		<i class="fas fa-search clicker">
+					  		</i>
+					  	</a>
+					  </li>
+					  	<li>
+					  		<a href="cart.html">
+					  			<i class="fas fa-shopping-cart">	
+					  			</i>
+					  		</a>
+					  	</li>
 					</ul>
-				</nav>
 
+			</div> 
 
-				<ul class="nav_link_icons">
-					<li><a href="search.html"><i class="fas fa-search"></i></li>
-					<li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-				</ul>
-		</div> 
-
-	</div><!-- END OF HEADER BAR MODULE -->
+		</div><!-- END OF HEADER BAR MODULE -->
 
 
 <!-- product details -->
@@ -44,58 +67,78 @@
 
 				<div class="row">
 
-					<div class="column"> <!-- start of small product photos column-->
+					<div class="product-pictures"> <!-- start of small product photos column-->
 						<div class="row">
-							<div class="small-pic">
-								<p>Product Photo</p>
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
 							</div>
 						</div>
 
 						<div class="row">
-							<div class="small-pic">
-								<p>Product Photo</p>
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_61bmo2lW_1080x.jpg?v=1570090207">
 							</div>
 						</div>
 
 						<div class="row">
-							<div class="small-pic">
-								<p>Product Photo</p>
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Downlights_Bitmap_Copy_4_1080x.png?v=1570090207">
 							</div>
 						</div>
 
 						<div class="row">
-							<div class="small-pic">
-								<p>Product Photo</p>
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Whole_House_Image-optimised_1080x.jpg?v=1570151633">
 							</div>
 						</div>
 					</div> <!-- end of small product photos column-->
 
 					<div class="column">
 						<div class="item-pic">
-							<p>Product Photo</p>
+							<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
 						</div>
 					</div>
 
-
-					<div class="column">
+					<div class="bulb-column">
 						<div class="item-detail-info">
-							<h1>Product Name</h1>
-							<h1>$$</h1>
-							<a href="#review">Reviews(4)</a>
-							<p class="prod-description">product description</p>
-							<a href="#" class="quantity-btn">Quantity</a>
-							<a href="#" class="add-cart-button">Add to Cart</a>
+							<h1>Whimsical Bulb</h1>
+							<h2>$45</h2>
+							<a href="#review">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i> (2)
+							</a>
+							<p class="prod-description">Featuring billions of colours in cool and warm tones, integrate this new bulb into your home for combine it with our other smart home products!</p>
+							<a href="#" id="minus">-</a>
+							<a href="#" id="quantity"> 0 </a>
+							<a href="#" id="add">+</a>
+							<a href="cart.html" class="add-cart-button">Add to Cart</a>
 						</div>
 					</div>
 
 				</div>
+				
+<section id="review">
 
 				<p class="sub-titles">DETAILS</p>
 
 				<div class="row">
 					
 					<div class="column">
-						<p class="prod-details">Details about Product</p>
+						<ul class="prod-details">
+							<li>550 billion colors</li>
+							<li>Warm and cool whites - probably the widest white range in smart lighting</li>
+							<li>Connects via Wi-Fi - no bridge/hub needed</li>
+							<li>Dimmable via app and voice control devices - never roll your eyes when you see the bathroom light on</li>
+							<li>Homekit, Alexa, Google Assistant, Smart Things and Cortana compatible (and more)</li>
+							<li>Two year limited hardware warranty</li>
+							<li>Schedule on-off, fade, colour change for: Convenience, energy efficiency, security when away from home
+							</li>
+
+
+
+						</ul>
 					</div>
 
 				</div>
@@ -107,35 +150,103 @@
 
 <!-- START OF REVIEW SECTION MODULE -->
 
-<section id="review">
-	<div class="container">
-		<div class="module-section"> <!-- beginning of module section row -->
-				<h2>REVIEW SECTION</h2>
-		</div> <!-- end of module section row -->
-	</div>
 
 	<div class="container"> <!-- start of container div -->
 		<p class="sub-titles">Reviews</p>
-		<a href="#" class="write-review-btn">write a review</a>
 
-		<div class="row">
+		
+		<input type="checkbox" style="display: none" id="cb">
+		<label id="toggle-button"for="cb">Write A Review</label>
+		<div class="review-popup">
 
-			<div class="column-review">
-				<p class="prod-details">Review</p>
+			<div class="write-review">
+				<div class="close-button">
+					<label id="toggle-button x-review" for="cb">X</label>
+					
+				</div>
+				<h2>Write a Review!</h2>
+				<div class="row star-input-row">
+					<h3>Rating: </h3>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<div class="row input-row">
+					<label for="title">Title of Review: </label>
+					<input type="text" name="title">
+				</div>
+				<div class="row input-row">
+					<label for="title">Name of Reviewer: </label>
+					<input type="text" name="title">
+				</div>
+				<div class="row input-row">
+					<label for="title">Review: </label>
+					<textarea rows="4" cols="24" name="message" placeholder="Review"></textarea>
+				</div>
+				<div class="row input-row">
+					<p>Add Image</p>
+					<p id="add-box">+</p>
+				</div>
+				<input type="checkbox" style="display: none" id="cb">
+				<label id="toggle-button"for="cb">Submit Review</label>
+				
 			</div>
-
-			<div class="column-review-details">
-				<p>Submitted date</p>
-				<p>Reviewer's name</p>
-			</div> 
-
+			<label class="exit-review" for="cb">x</label>
 		</div>
 
-		<div class="review-pic">
+		<div class="review-container">
+
+			<div class="column">
+				<p>May 25th, 2020</p>
+				<p>Jane Doe</p>
+			</div> 
+
+			<div class="row" id="star-rating">
+				<div class="stars">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
 			</div>
 
-		<div class="review-pic">
+				<div>
+					<p class="review">I was very sketpical of this product at first, but after about a month it has complimented my home very nicely!</p>
+				</div>
+
+
+			<div class="review-pic">
+				<img src="https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-on-pillar-lights.jpg">
+				</div>
+
+			<div class="review-pic">
+				<img src="https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-Wi-Fi-LED-Smart-Bulb-4.jpg">
 			</div>
+		</div>
+
+		<div class="review-container">
+
+			<div class="column">
+				<p>May 25th, 2020</p>
+				<p>Jordan Poe</p>
+			</div> 
+		
+			<div class="row" id="star-rating">
+				<div class="stars">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+			</div>
+
+				<div>
+					<p class="review">These were a lot cooler than I thought they would be. Adds a nice tough to my home, although I don't think this specific bulb works the best for me, so I'll be trying out the other ones.</p>
+				</div>
+
+		</div>
 
 	</div> <!-- end of container div -->
 </section>
@@ -143,7 +254,7 @@
 
 <!-- product details -->
 
-			<div class="row" id="footer-example">
+		<div class="row" id="footer-example">
 			<div class="footer-left">
 				<label for="fname">SIGN UP FOR OUR NEWSLETTER </label> <br>
 				<input type="text" id="fname" name="fname" placeholder="Email Address">
@@ -155,8 +266,9 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<img src="img/socials.png">
-				<p>PRODUCTS     |     SUPPORT     |     ABOUT     |     LEGAL</p> <!--THIS IS JUST A PLACEHOLDER FOR LINKS LATER-->
+				<a href="#"><img src="img/socials.png"></a>
+				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
+				<p class="footer-links-small"><a href="https://github.com/Aethoro/P02.3">Github</a>     |     <a href="styleguide.html">Styleguide</a></p>
 			</div>
 
 
@@ -172,6 +284,5 @@
 			</div>
 		</div> 
 
-</body>
-
+		</body>
 </html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Item Details 2</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/mod.css">
+		<script src="https://kit.fontawesome.com/4346ed3535.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<!-- START OF HEADER BAR MODULE -->
+		<div class="nav-container">
+
+			<div class="row" id="nav-example">
+					<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
+
+					<nav>
+						<ul class="nav_link_example">
+							<li><a href="productCategory.html">SHOP</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+
+					<div id="showdiv1"></div>
+
+					<ul class="nav_link_icons">
+						
+						<li>
+							<div class="hiddendiv nr1">
+								<input type="search" placeholder="Search" class="search-input">
+							</div>
+						</li>
+					  	<li>
+					  		<a href="#showdiv1" class="clicker" tabindex="1">
+					  			<i class="fas fa-search clicker">
+					  				
+					  			</i>
+					  		</a>
+					  	<a href="#hidediv1" class="clicker hidden" tabindex="1">
+					  		<i class="fas fa-search clicker">
+					  		</i>
+					  	</a>
+					  </li>
+					  	<li>
+					  		<a href="cart.html">
+					  			<i class="fas fa-shopping-cart">	
+					  			</i>
+					  		</a>
+					  	</li>
+					</ul>
+
+			</div> 
+
+		</div><!-- END OF HEADER BAR MODULE -->
+
+
+<!-- product details -->
+
+<div class="container"> <!-- start of container -->
+
+			<p class="path">PRODUCTS / BULBS</p>
+
+				<div class="row">
+
+					<div class="product-pictures"> <!-- start of small product photos column-->
+						<div class="row">
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.29_pm_720x.jpg?v=1583382662">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Contextual_1_7cf089a2-c075-40ad-b4b6-8f02c22b3ea4_1080x.jpg?v=1583382582">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Contextual_2_c060e91e-cf88-40e5-bba2-021b510402ca_1080x.jpg?v=1583382582">
+							</div>
+						</div>
+					</div> <!-- end of small product photos column-->
+
+						<div class="item-pic">
+							<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+						</div>
+
+
+						<div class="item-detail-info">
+							<h1>Candle Bulb</h1>
+							<h2>$45</h2>
+							<a href="#review">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i> (2)
+							</a>
+							<p class="prod-description">World-first smart light with Polyhrome Technology TM. The Candle Bulb has 26 customizable zones, billions of color combinations, plus a huge warm-cool white range. For power users, add endless integreations</p>
+							<a href="#" id="minus">-</a>
+							<a href="#" id="quantity"> 0 </a>
+							<a href="#" id="add">+</a>
+							<a href="#" class="add-cart-button">Add to Cart</a>
+						</div>
+
+				</div>
+<section id="review">
+
+				<p class="sub-titles">DETAILS</p>
+
+				<div class="row">
+					
+					<div class="column">
+						<ul class="prod-details">
+							<li>Comes with an E12 fitting</li>
+							<li>Endless color combinations and blended white light</li>
+							<li>Connects via Wi-Fi - no bridge/hub needed</li>
+							<li>Polychrome Technology TM - 26 addressable zones per candle</li>
+							<li>HCustom effects and features</li>
+							<li>Homekit, Alexa, Google Assistant, Smart Things and Cortana compatible (and more)</li>
+							<li>Two year limited hardware warranty</li>
+							<li>Schedule on-off, fade, colour change for: Convenience, energy efficiency, security when away from home
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+		</div> <!-- end of container -->
+
+<!-- END OF DETAILED ITEM MODULE -->
+
+
+<!-- START OF REVIEW SECTION MODULE -->
+
+
+	<div class="container"> <!-- start of container div -->
+		<p class="sub-titles">Reviews</p>
+
+		
+		<input type="checkbox" style="display: none" id="cb">
+		<label id="toggle-button"for="cb">Write A Review</label>
+		<div class="review-popup">
+
+			<div class="write-review">
+				<div class="close-button">
+					<label id="toggle-button x-review" for="cb">X</label>
+					
+				</div>
+				<h2>Write a Review!</h2>
+				<div class="row star-input-row">
+					<h3>Rating: </h3>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<div class="row input-row">
+					<label for="title">Title of Review: </label>
+					<input type="text" name="title">
+				</div>
+				<div class="row input-row">
+					<label for="title">Name of Reviewer: </label>
+					<input type="text" name="title">
+				</div>
+				<div class="row input-row">
+					<label for="title">Review: </label>
+					<textarea rows="4" cols="24" name="message" placeholder="Review"></textarea>
+				</div>
+				<div class="row input-row">
+					<p>Add Image</p>
+					<p id="add-box">+</p>
+				</div>
+				<input type="checkbox" style="display: none" id="cb">
+				<label id="toggle-button"for="cb">Submit Review</label>
+				
+			</div>
+			<label class="exit-review" for="cb">x</label>
+		</div>
+
+		<div class="review-container">
+
+			<div class="column">
+				<p>May 25th, 2020</p>
+				<p>Jane Doe</p>
+			</div> 
+
+			<div class="row" id="star-rating">
+				<div class="stars">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+			</div>
+
+				<div>
+					<p class="review">I was very sketpical of this product at first, but after about a month it has complimented my home very nicely!</p>
+				</div>
+
+
+			<div class="review-pic">
+				<img src="https://cdn.mos.cms.futurecdn.net/S6iucyJ4TKYTXRM3RpBzNP-970-80.jpg">
+				</div>
+
+			<div class="review-pic">
+				<img src="https://cdn.mos.cms.futurecdn.net/KKCEDwDU6pqrRYHNSTG8KP-970-80.jpg">
+			</div>
+		</div>
+
+		<div class="review-container">
+
+			<div class="column">
+				<p>May 25th, 2020</p>
+				<p>Jordan Poe</p>
+			</div> 
+		
+			<div class="row" id="star-rating">
+				<div class="stars">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+			</div>
+
+				<div>
+					<p class="review">These were a lot cooler than I thought they would be. Adds a nice tough to my home, although I don't think this specific bulb works the best for me, so I'll be trying out the other ones.</p>
+				</div>
+
+		</div>
+
+	</div> <!-- end of container div -->
+</section>
+
+
+<!-- product details -->
+		<div class="row" id="footer-example">
+			<div class="footer-left">
+				<label for="fname">SIGN UP FOR OUR NEWSLETTER </label> <br>
+				<input type="text" id="fname" name="fname" placeholder="Email Address">
+			</div>
+
+			<div class="footer-line">
+
+			</div>
+
+			<div class="footer-center">
+				<p class="footer-center-center">FOLLOW US</p>
+				<a href="#"><img src="img/socials.png"></a>
+				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
+				<p class="footer-links-small"><a href="https://github.com/Aethoro/P02.3">Github</a>     |     <a href="styleguide.html">Styleguide</a></p>
+			</div>
+
+
+			<div class="footer-right">
+				<h4>123-456-7890</h4>
+				<p>lumin@customerservice.ca</p>
+				<p>4048 Robson St
+				<br>Vancouver, BC
+				<br>V6B 3K9
+				<br>
+				<img src="img/payment-icons.png">
+				</p>
+			</div>
+		</div> 
+
+		</body>
+</html>

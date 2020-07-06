@@ -2,7 +2,7 @@
 	<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>P02 Test</title>
+		<title>Contact</title>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/mod.css">
 		<script src="https://kit.fontawesome.com/4346ed3535.js" crossorigin="anonymous"></script>
@@ -14,49 +14,75 @@
 		<!-- START OF HEADER BAR MODULE -->
 		<div class="nav-container">
 
-		<div class="row" id="nav-example">
-				<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
+			<div class="row" id="nav-example">
+					<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
 
-				<nav>
-					<ul class="nav_link_example">
-						<li><a href="productCategory.html">SHOP</a></li>
-						<li><a href="events.html">EVENTS</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
+					<nav>
+						<ul class="nav_link_example">
+							<li><a href="productCategory.html">SHOP</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+
+					<div id="showdiv1"></div>
+
+					<ul class="nav_link_icons">
+						
+						<li>
+							<div class="hiddendiv nr1">
+								<input type="search" placeholder="Search" class="search-input">
+							</div>
+						</li>
+					  	<li>
+					  		<a href="#showdiv1" class="clicker" tabindex="1">
+					  			<i class="fas fa-search clicker">
+					  				
+					  			</i>
+					  		</a>
+					  	<a href="#hidediv1" class="clicker hidden" tabindex="1">
+					  		<i class="fas fa-search clicker">
+					  		</i>
+					  	</a>
+					  </li>
+					  	<li>
+					  		<a href="cart.html">
+					  			<i class="fas fa-shopping-cart">	
+					  			</i>
+					  		</a>
+					  	</li>
 					</ul>
-				</nav>
 
+			</div> 
 
-				<ul class="nav_link_icons">
-					<li><a href="search.html"><i class="fas fa-search"></i></li>
-					<li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
-				</ul>
-		</div> 
-
-	</div><!-- END OF HEADER BAR MODULE -->
-
+		</div><!-- END OF HEADER BAR MODULE -->
 
 <!-- contact content -->
 
 <div class="container">
 
+	<div class="row">
+		<h1 class="title">CONTACT US</h1>
+	</div>
+
 		<div class="row-contact">
 
 			<div class="column">
 				<div class="contact-pic">
-					<p>Photo</p>
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Downlights_Context_2_900x.png?v=1570097951">
 				</div>
 			</div>
 
 			<div class="column">
 				<div class="contact-pic">
-					<p>Photo</p>
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Easy_on_the_eye_900x.jpg?v=1570096898">
 				</div>
 			</div>
 
 			<div class="column">
 				<div class="contact-pic">
-					<p>Photo</p>
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/LIFX-Livingroom-01-C02_1080x.jpg?v=1570098288">
 				</div>
 			</div>
 
@@ -85,11 +111,11 @@
 
 				<div class="row">
 
-					<div class="column">
+					<div class="column input-column">
 						<input type="text" id="fname" name="fname" placeholder="First Name">
 					</div>
 
-					<div class="column">
+					<div class="column input-column">
 						<input type="text" id="fname" name="fname" placeholder="Last Name">
 					</div>
 
@@ -105,7 +131,7 @@
 
 				<div class="row">
 
-					<div class="column">
+					<div class="column input-column">
 						<input type="text" id="email" name="email" placeholder="E-mail Address">
 					</div>
 
@@ -121,7 +147,7 @@
 
 				<div class="row">
 
-					<div class="column">
+					<div class="column input-column">
 						<input type="text" id="title" name="title" placeholder="Title">
 					</div>
 
@@ -137,7 +163,7 @@
 
 				<div class="row">
 
-					<div class="column">
+					<div class="column input-column">
 						<textarea rows="6" cols="6" name="message" placeholder="Message"></textarea>
 					</div>
 
@@ -161,19 +187,19 @@
 				<div class="row">
 					<p class="number-title">North American Customers</p>
 					<div class="row">
-					<p class="phone-number">phone number</p>
+					<p class="phone-number">1-800-837-4834</p>
 					</div>
 				</div>
 
 				<div class="row">
 					<p class="number-title">International Customers</p>
 					<div class="row">
-					<p class="phone-number">phone number</p>
+					<p class="phone-number">1-883-293-2349</p>
 					</div>
 				</div>
 
 				<div class="row">
-					<img src="img/socials.png" id="contact-socials">
+					<a href="#"><img src="img/socials.png" id="contact-socials"></a>
 				</div>
 
 				</div>
@@ -202,8 +228,9 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<img src="img/socials.png">
-				<p>PRODUCTS     |     SUPPORT     |     ABOUT     |     LEGAL</p> <!--THIS IS JUST A PLACEHOLDER FOR LINKS LATER-->
+				<a href="#"><img src="img/socials.png"></a>
+				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
+				<p class="footer-links-small"><a href="https://github.com/Aethoro/P02.3">Github</a>     |     <a href="styleguide.html">Styleguide</a></p>
 			</div>
 
 
