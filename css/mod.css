@@ -328,7 +328,11 @@ body{
 	}
 
 	.item-pic img {
-		max-width: 100%;
+		width: 100%;
+	}
+
+	#main-pic {
+		width: 100%;
 	}
 }
 
@@ -389,7 +393,7 @@ body{
 	}
 }
 
-@media (min-width: 40rem){
+@media (min-width: 42rem){
 
 }
 
@@ -408,6 +412,11 @@ body{
 		top: 450px;
 		z-index: +0.5;*/
 		order: 2;
+		width: 100%;
+	}
+
+	.side-pics{
+		width: 1px;
 	}
 
 	.bulb-column {
@@ -846,7 +855,7 @@ p {
 	color: white;
 }
 
-.add-cart-button {
+/*.add-cart-button {
 	text-decoration: none;
 	margin-left: 20px;
 	padding: 10px 10px;
@@ -855,12 +864,21 @@ p {
 	border-radius: 5px;
 	transition: 0.3s ease;
 	cursor: pointer;
+}*/
+
+.add-cart-button {
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 10px 10px;
+	color: black;
+	border-radius: 5px;
+	transition: 0.3s ease;
+	cursor: pointer;
+	background: #9CEDEB;
 }
 
 .add-cart-button:hover {
-	background-color: #9CEDEB;
-	border: 2px solid #9CEDEB;
-	color: #black;
+	background: rgba(156, 237, 235, 0.4);
 }
 
 #nav-mod-logo {
@@ -1161,12 +1179,12 @@ h2{
 .send-message-btn, .read-more-button {
 	text-decoration: none;
 	padding: 10px 10px;
-	border: 2px solid #9CEDEB;
 	color: black;
 	border-radius: 5px;
 	transition: 0.3s ease;
 	margin-top: 20px;
 	cursor: pointer;
+	background: #9CEDEB;
 }
 
 .read-more-button {
@@ -1174,7 +1192,7 @@ h2{
 }
 
 .send-message-btn:hover, .read-more-button:hover, #toggle-button:hover {
-	background-color: #9CEDEB;
+	background: rgba(156, 237, 235, 0.4);
 }
 
 #contact-socials {
@@ -1462,7 +1480,7 @@ a {
 }
 
 #showdiv1:target ~ ul li .hiddendiv.nr1 {
-  width: 170px;
+  width: 186px;
 }
 
 
@@ -1483,7 +1501,7 @@ a {
 .write-review i {
 	color: black;
 	padding: 25px 10px;
-	border: 1px solid white;
+	border: 0px solid white;
 }
 
 .write-review i:hover, i:focus {
@@ -1502,7 +1520,7 @@ input:unchecked + label:after {
 	 content: " "; }
 
 #toggle-button {
-    border: 2px solid #9CEDEB;
+    background: #9CEDEB;
     border-radius: 5px;
     font-size: 16px;
     display: inline-block;
@@ -1633,3 +1651,10 @@ input, textarea {
 	flex: none;
 }
 
+.container #toggle-button {
+	margin-left: 15px;
+}
+
+.footer-left input {
+	background: white;
+}
