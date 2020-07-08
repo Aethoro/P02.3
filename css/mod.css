@@ -706,19 +706,6 @@ p {
 	color: black;
 }
 
-.quick-view-btn  {
-	position: absolute;
-	text-decoration: none;
-	padding: 5px 10px;
-	background-color:#9CEDEB;
-	border: 2px solid #9CEDEB;
-	color: black;
-	transition: 0.3s ease;
-	top: 355px;
-	right: 30px;
-	border-radius: 5px;
-}
-
 .out-btn  {
 	position: absolute;
 	text-decoration: none;
