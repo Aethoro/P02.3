@@ -115,6 +115,10 @@ body{
 		justify-content: center;
 	}
 
+	.cart-price-column p, h3 {
+		text-align:left;
+	}
+
 	.item-cart-pic {
 		background-color: #A0A0A0;
 		height: 100px;
@@ -944,7 +948,7 @@ h2{
 .checkout-category-text {
 	text-decoration: underline;
 	font-weight: normal;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
 	margin-top: 30px;
 }
 
@@ -1236,8 +1240,9 @@ a {
 	flex-wrap: wrap;
 	flex-direction: row;
 	width: 100%;
-	justify-content: flex-start;
-	padding-left: 20px;
+	justify-content: flex-end;
+	padding-left: 5px;
+	text-align: right;
 }
 
 .row-search {
@@ -1620,3 +1625,11 @@ input, textarea {
 	flex: none;
 }
 
+.prices {
+	text-align: left;
+	padding-left: 30px;
+}
+
+#order-number {
+	text-align: center;
+}
