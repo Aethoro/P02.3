@@ -169,14 +169,16 @@ body{
 
 	.checkout-summary-column {
 		width:40%;
+		justify-content: flex-start;
 	}
 
 	.checkout-summary{
 		background-color: white;
-		height: 330px;
-		width: 360px;
+		max-width: 365px;
+		width: 100%;
 		margin: 45px 30px;
-		border: 2px solid grey;
+		border: 0px solid grey;
+		padding: 0px 20px;
 	}
 	.category {
 		flex: 1 1 auto;
@@ -205,6 +207,11 @@ body{
 	.about-section2 img {
 		max-height: 300px;
 		max-width: 700px;
+	}
+
+	.item-pic img {
+		max-width: 500px;
+		max-height: 500px;
 	}
 }
 
@@ -289,10 +296,12 @@ body{
 	}
 
 	.checkout-summary{
-		background-color: #A0A0A0;
+		background-color: white;
 		height: 330px;
-		width: 360px;
+		max-width: 360px;
+		width: 100%;
 		margin: 30px 0px;
+		padding: 0px 20px;
 	}
 
 	.input-column{
@@ -318,6 +327,9 @@ body{
 		min-width: 300px;
 	}
 
+	.item-pic img {
+		max-width: 100%;
+	}
 }
 
 /*@media(min-width: 1422px) {
@@ -411,7 +423,7 @@ body{
 .featured {
 	height: 300px;
 	width:300px;
-
+	/*transition: 0.3s ease;*/
 }
 
 .featured:hover {
@@ -760,11 +772,6 @@ p {
 	flex: 1;
 	flex-basis: auto;
 
-}
-
-.item-pic img {
-	max-width: 500px;
-	max-height: 500px;
 }
 
 .event-pic img{
@@ -1224,6 +1231,7 @@ a {
 	flex-direction: row;
 	width: 100%;
 	justify-content: flex-start;
+	text-align: left;
 }
 
 .row-summary-titles {
@@ -1595,11 +1603,6 @@ input, textarea {
 	cursor: pointer;
 }
 
-
-
-
-
-
 .exit-review {
     display: inline-block;
     cursor: pointer;
@@ -1610,4 +1613,8 @@ input, textarea {
 	height: 100%;
 	background-color: #000000;
 	opacity: 40%;
+}
+
+.checkout-content, .checkout-content .row {
+	width: 100%;
 }
