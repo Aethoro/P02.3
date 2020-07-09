@@ -437,7 +437,15 @@ body{
 	height: 300px;
 	margin: 10px 10px;
 	text-align: center;
+	background-color:#9CEDEB;
+	height: 335px;
 }
+
+.featured-product a{
+		color: black;
+		
+	}
+
 .featured {
 	height: 300px;
 	width:300px;
@@ -648,7 +656,7 @@ p {
 .category-name {
 	position: relative;
 	text-align: center;
-
+	color: black;
 }
 
 .grid img {
@@ -659,7 +667,7 @@ p {
 
 .grid {
 	position: relative;
-	margin: 20px 5px;
+	margin: 20px 0px;
 	text-align: center;
 	color: black;
 	height: 410px;
@@ -667,22 +675,21 @@ p {
 	max-width: 300px;
 }
 
-.grid:hover {
-	height: 510px;
-}
-
 .hover-description {
 	visibility: hidden;
 	text-align: left;
 	position: absolute;
-	padding-left: 30px;
-	padding-right: 30px;
-	top: 410px;
+	padding: 0px 30px;
+	top: 300px;
 	font-size: small;
 }
 
 .grid:hover .hover-description {
 	visibility: visible;
+}
+
+.grid:hover .desc-hover i {
+	visibility: hidden;
 }
 
 .prod-name {
@@ -1720,6 +1727,26 @@ display: flex;
 flex-direction: column;
 flex-basis: 100%;
 flex: 1;
+}
+
+#lumin-welcome {
+	justify-content: center;
+	text-align: center;
+}
+
+#welcome-text {
+	text-align: center;
+}
+
+#welcome-text a{
+	background-color:#9cedeb;
+	color: black;
+	padding: 0px 5px;
+	transition: 0.3s ease;
+}
+
+#welcome-text a:hover{
+	background-color: rgba(156,237,235,.4);
 }
 
 .styleguide-column .column {
