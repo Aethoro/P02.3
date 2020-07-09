@@ -4,8 +4,11 @@
 		<meta charset="utf-8">
 		<title>P02 - Check In 1</title>
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/main.css">
+		<!-- <link rel="stylesheet" href="css/main.css"> -->
 		<link rel="stylesheet" href="css/nav.css">
+		<link rel="stylesheet" href="css/mod.css">
+		<script src="https://kit.fontawesome.com/4346ed3535.js" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 	</head>
 
@@ -25,7 +28,9 @@
 			</div>
 		</div>
 		<h1>Site Map</h1>
-		<img src="img/sitemap.png" alt="Mockup" width="1920" height="1280">
+		<img src="img/sitemap.png" alt="Mockup" class="sitemap">
+
+		<div class="container">
 
 		&nbsp<p><a href="https://github.com/Aethoro/P02.2" target="blank">Github Link</a>
 
@@ -47,10 +52,10 @@
 					<div class="column">
 						
 						<h3>A Call To Action Button</h3>
-						<a href="#" id="continue-button">Continue</a>
+						<a href="#" class="read-more-button">Add to Cart</a>
 						
 						<code>
-							&lt;a href="#" id="continue-button"&gt;Continue&lt;/a&gt;
+							&lt;a href="#" class="add-cart-button"&gt;Continue&lt;/a&gt;
 						</code>
 
 					</div>
@@ -203,29 +208,62 @@
 			<h1>Modular Pattern Elements</h1>
 			<h3 class="nav-mod-h3">Main Navigation Module</h3>
 
+		</div>
+
+			<div class="nav-container">
+
 			<div class="row" id="nav-example">
-					<h1 id="nav-mod-logo">LUMIN</h1>
+					<a href="webpages.html" id="logo-link"><h1 id="nav-mod-logo">LUMIN</h1></a>
 
 					<nav>
 						<ul class="nav_link_example">
-							<li><a href="#">SHOP</a></li>
-							<li><a href="#">EVENTS</a></li>
-							<li><a href="#">ABOUT</a></li>
-							<li><a href="#">CONTACT</a></li>
+							<li><a href="productCategory.html">SHOP</a></li>
+							<li><a href="events.html">EVENTS</a></li>
+							<li><a href="about.html">ABOUT</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
 						</ul>
 					</nav>
 
+					<div id="showdiv1"></div>
 
 					<ul class="nav_link_icons">
-						<li><img src="img/search.png"></li>
-						<li><img src="img/cart.png"></li>
+						
+						<li>
+							<div class="hiddendiv nr1">
+								<input type="search" placeholder="Search" class="search-input">
+							</div>
+						</li>
+					  	<li>
+					  		<a href="#showdiv1" class="clicker" tabindex="1">
+					  			<i class="fas fa-search clicker">
+					  				
+					  			</i>
+					  		</a>
+					  	<a href="#hidediv1" class="clicker hidden" tabindex="1">
+					  		<i class="fas fa-search clicker">
+					  		</i>
+					  	</a>
+					  </li>
+					  	<li>
+					  		<a href="cart.html">
+					  			<i class="fas fa-shopping-cart">	
+					  			</i>
+					  		</a>
+					  	</li>
 					</ul>
-			</div> <!-- end of row div -->
+
+			</div> 
+
+
+
+		</div> <!-- end of row div -->
+
+		<div class="container">
 			<div class="row">
 				<div class="column">
 					<p>HTML</p>
 					<code>
-						&lt;div class=&quot;row&quot; id=&quot;nav-example&quot;&gt;<br> &lt;h1 id=&quot;nav-mod-logo&quot;&gt;LUMIN&lt;/h1&gt;<br> &lt;nav&gt;<br> &lt;ul class=&quot;nav_link_example&quot;&gt;<br> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;SHOP&lt;/a&gt;&lt;/li&gt;<br> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;EVENTS&lt;/a&gt;&lt;/li&gt;<br> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br> &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;<br> &lt;/ul&gt;<br> &lt;/nav&gt;<br> &lt;ul class=&quot;nav_link_icons&quot;&gt;<br> &lt;li&gt;&lt;img src=&quot;img/search.png&quot;&gt;&lt;/li&gt;<br> &lt;li&gt;&lt;img src=&quot;img/cart.png&quot;&gt;&lt;/li&gt;<br> &lt;/ul&gt;<br> &lt;/div&gt;
+						&lt;div class=&quot;row&quot; id=&quot;nav-example&quot;&gt;<br> &lt;a href=&quot;webpages.html&quot; id=&quot;logo-link&quot;&gt;&lt;h1 id=&quot;nav-mod-logo&quot;&gt;LUMIN&lt;/h1&gt;&lt;/a&gt;<br> &lt;nav&gt;<br> &lt;ul class=&quot;nav_link_example&quot;&gt;<br> &lt;li&gt;&lt;a href=&quot;productCategory.html&quot;&gt;SHOP&lt;/a&gt;&lt;/li&gt;<br> &lt;li&gt;&lt;a href=&quot;events.html&quot;&gt;EVENTS&lt;/a&gt;&lt;/li&gt;<br> &lt;li&gt;&lt;a href=&quot;about.html&quot;&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br> &lt;li&gt;&lt;a href=&quot;contact.html&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;<br> &lt;/ul&gt;<br> &lt;/nav&gt;<br> &lt;div id=&quot;showdiv1&quot;&gt;&lt;/div&gt; &lt;ul class=&quot;nav_link_icons&quot;&gt; &lt;li&gt; &lt;div class=&quot;hiddendiv nr1&quot;&gt;<br> &lt;input type=&quot;search&quot; placeholder=&quot;Search&quot; class=&quot;search-input&quot;&gt;<br> &lt;/div&gt;<br> &lt;/li&gt;<br> &lt;li&gt;<br> &lt;a href=&quot;#showdiv1&quot; class=&quot;clicker&quot; tabindex=&quot;1&quot;&gt;<br> &lt;i class=&quot;fas fa-search clicker&quot;&gt;<br> &lt;/i&gt;<br> &lt;/a&gt;<br> &lt;a href=&quot;#hidediv1&quot; class=&quot;clicker hidden&quot; tabindex=&quot;1&quot;&gt;<br> &lt;i class=&quot;fas fa-search clicker&quot;&gt;<br> &lt;/i&gt;<br> &lt;/a&gt;<br> &lt;/li&gt;<br> &lt;li&gt;<br> &lt;a href=&quot;cart.html&quot;&gt;<br> &lt;i class=&quot;fas fa-shopping-cart&quot;&gt;<br> &lt;/i&gt;<br> &lt;/a&gt;<br> &lt;/li&gt;<br> &lt;/ul&gt;<br> &lt;/div&gt;
 					</code>
 				</div>
 				<div class="column">
@@ -264,21 +302,61 @@
 			
 			<h3 class="nav-mod-h3">Product Detail Listing</h3>
 
-			<div class="row">
+			<p class="path">PRODUCTS / BULBS</p>
 
-				<div class="column">
-					<img src="img/product.jpg">
-				</div>
+				<div class="row" id="item-detail-pics">
 
-				<div class="column" id="example-bulb">
-					<ul class="product-info">
-						<li><h1 class="prod-example">Dwarf Bulb</h1></li>
-						<li><h1 class="prod-example">$45</h1></li>
-						<li><img src="img/starRating.jpg"><a href="#" id="reviews">Reviews(4)</a></li>
-						<li><p id="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur urna sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non neque et arcu rhoncus lacinia vitae quis nibh. Integer condimentum facilisis euismod. Ut in pharetra enim, sit amet porttitor magna. Vivamus auctor euismod libero in egestas. Aliquam mollis tortor et varius sagittis. Donec et tellus nec turpis laoreet cursus. Etiam pretium enim massa, sed maximus augue vestibulum quis. Nunc mollis, nunc eget vehicula elementum, leo velit vehicula lacus, nec pellentesque ipsum lacus non ipsum. </p></li>
-						<li><a href="#" class="quantity"> -</a> 0 <a href="#" class="quantity"> +</a> <a href="#" id="add-to-cart-button">add to cart</a></li>
-				</div>
-			</div> <!-- end of row div -->
+					<div class="product-pictures"> <!-- start of small product photos column-->
+						<div class="row">
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_61bmo2lW_1080x.jpg?v=1570090207">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="side-pics">
+								<img class="small-pic" id="side-2" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Downlights_Bitmap_Copy_4_1080x.png?v=1570090207">
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="side-pics">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Whole_House_Image-optimised_1080x.jpg?v=1570151633">
+							</div>
+						</div>
+					</div> <!-- end of small product photos column-->
+
+					<div class="column" id="main-pic">
+						<div class="item-pic">
+							<img id="pic-1" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+						</div>
+					</div>
+
+					<div class="bulb-column">
+						<div class="item-detail-info">
+							<h1>Whimsical Bulb</h1>
+							<h2>$45</h2>
+							<a href="#review">
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i>
+								<i class="fa fa-star" aria-hidden="true"></i> (2)
+							</a>
+							<p class="prod-description">Featuring billions of colours in cool and warm tones, integrate this new bulb into your home for combine it with our other smart home products!</p>
+							<a href="#" id="minus">-</a>
+							<a href="#" id="quantity"> 0 </a>
+							<a href="#" id="add">+</a>
+							<a href="cart.html" class="add-cart-button">Add to Cart</a>
+						</div>
+					</div>
+
+				</div> <!-- end of row div -->
 			<div class="row">
 				<div class="column">
 					<p>HTML</p>
@@ -517,35 +595,60 @@
 					</code>
 				</div>
 			</div>
+		</div>
+
+		<div class="container">
 
 			<h3 class="nav-mod-h3">Product Category Page</h3>
 
+			<div class="product-category-container">
+			
+				<div class="row"> <!-- beginning of module title row -->
+						<h1 class="title">PRODUCTS</h1>
+				</div> <!-- end of module title row -->
 
-			<h1 class="page-title">PRODUCTS</h1>
+				<div class="row" > <!-- beginning of category picture row -->
 
-			<div class="row">
+					<div class="category">
+							
+							<a href="productList.html">
+								<img class="category-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/candle_ww_lit_e12_1080x.jpg?v=1591846321">
+								<p class="category-name">Bulbs</p>
+							</a>
+			
+					</div>
 
-				<div class="column">
-					<img src="img/category1.jpg" alt="category 1" width="250" height="250" class="img-category">
-					<h2 class="img-category">Bulbs</h2>
-				</div>
+					<div class="category">
 
-				<div class="column">
-					<img src="img/category3.jpg" alt="category 2" width="250" height="250" class="img-category">
-					<h2 class="img-category">Tiles</h2>
-				</div>
+						<a href="homeEntertainment.html">
+							<img class="category-pic" src="img/category3.jpg">
+							<p class="category-name">Home Entertainment</p>
+						</a>
 
-				<div class="column">
-					<img src="img/category4.jpg" alt="category 3" width="250" height="250" class="img-category">
-					<h2 class="img-category">Light Strips</h2>
-				</div>
+					</div>
 
-				<div class="column">
-					<img src="img/category5.png" alt="category 4" width="250" height="250" class="img-category">
-					<h2 class="img-category">Accessories</h2>
-				</div>
+					<div class="category">
+		
+						<a href="lightStrips.html">
+							<img class="category-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/LIFXZ-StarterKit-2-Lit_900x.jpg?v=1570090163">
+							<p class="category-name">Light Strips</p>
+						</a>
 
-			</div> <!-- end of row div -->
+					</div>
+
+					<div class="category">
+
+						<a href="accessories.html">
+							<img class="category-pic" src="img/switch.png">
+							<p class="category-name">Accessories</p>
+						</a>
+
+					</div>
+
+				</div> <!-- end of category picture row -->
+
+
+		</div><!-- end of product category module -->
 			<div class="row">
 				<div class="column">
 					<p>HTML</p>
@@ -583,8 +686,1174 @@
 				</div>
 			</div>
 
+		</div>
+
+		<!--- product list ---->
+
+		<h3 class="nav-mod-h3">Product List Page</h3>
+	<div class="container"> <!-- start of product list container -->
+		<div class="row">
+			<h1 class="title">BULBS</h1>
+		</div>
+	</div>
+
+	<div class="container">
+
+			<div class="filter">
+				
+				<h3>Filter and Sort</h3>
+
+				<ul>
+					<li>
+						<input type="checkbox" id="priceUp" name="priceUp">
+						<label for="priceUp"> Price Low to High</label>
+					</li>
+
+					<li>
+						<input type="checkbox" id="priceDown" name="priceDown">
+						<label for="priceDown"> Price High to Low</label>
+					</li>
+
+					<li>
+						<input type="checkbox" id="inStock" name="inStock">
+						<label for="inStock"> Items in Stock</label>
+					</li>
+
+					<li>
+						<input type="checkbox" id="onSale" name="onSale">
+						<label for="onSale"> On Sale</label>
+					</li>
+				</ul>
+			</div> <!-- end of filter div -->
+
+		<div class="row">
+
+			<div class="column">
+				<a href="itemDetails.html">
+					<div class="grid">
+						<img class="list-item" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_900x.jpg?v=1570090207">
+						<h2 class="prod-name">Whimsical Bulb</h2>
+						<h3 class="price">$45</h3>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<p class="hover-description">
+							Featuring billions of colours in cool and warm tones, integrate this new bulb into your home for combine it with our other smart home products!
+						</p>
+					</div>
+				</a>
+			</div>
 
 
+			<div class="column">
+
+				<a href="itemDetails2.html">
+					<div class="grid">
+						<img class="list-item" src="img/noStock.jpg">
+						<h2 class="prod-name">Candle Bulb</h2>
+						<h3 class="price">$45</h3>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<p class="hover-description">
+							World-first smart light with Polychrome Technology TM. 26 customizable zones, billions of color combinations, plus a huge warm-cool white range.
+						</p>
+						</div>
+				</a>
+			</div>
+
+
+			<div class="column">
+				<a href="itemDetails3.html">
+					<div class="grid">
+						<img class="list-item" src="img/sale.jpg">
+						<h2 class="prod-name">Level Bulb</h2>
+						<h3 class="sale-price"><strike>$50</strike>     $30</h3>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<p class="hover-description">
+							The Level Bulb is a modern, powerful bulb for every space. With one TRILLION colours plus massive cool to warm white range, the Level Bulb can reach a blinding 1100 lumens.
+						</p>
+						</div>
+					</a>
+				</div>
+
+		</div>
+
+
+
+		</div> <!-- end of product list container -->
+
+	<!-- end of product list -->
+
+	<!-- START OF REVIEW SECTION MODULE -->
+	<h3 class="nav-mod-h3">Product Review Module</h3>
+
+	<div class="container"> <!-- start of container div -->
+		<p class="sub-titles">Reviews</p>
+
+		
+		<input type="checkbox" style="display: none" id="cb">
+		<label id="toggle-button"for="cb">Write A Review</label>
+		<div class="review-popup">
+
+			<div class="write-review">
+				<div class="close-button">
+					<label id="toggle-button x-review" for="cb">X</label>
+					
+				</div>
+				<h2>Write a Review!</h2>
+				<div class="row star-input-row">
+					<h3>Rating: </h3>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+				</div>
+				<div class="row input-row">
+					<label for="title">Title of Review: </label>
+					<input type="text" name="title">
+				</div>
+				<div class="row input-row">
+					<label for="title">Name of Reviewer: </label>
+					<input type="text" name="title">
+				</div>
+				<div class="row input-row">
+					<label for="title">Review: </label>
+					<textarea rows="4" cols="24" name="message" placeholder="Review"></textarea>
+				</div>
+				<div class="row input-row">
+					<p>Add Image</p>
+					<p id="add-box">+</p>
+				</div>
+				<input type="checkbox" style="display: none" id="cb">
+				<label id="toggle-button"for="cb">Submit Review</label>
+				
+			</div>
+			<label class="exit-review" for="cb">x</label>
+		</div>
+
+		<div class="review-container">
+
+			<div class="column">
+				<p>May 25th, 2020</p>
+				<p>Jane Doe</p>
+			</div> 
+
+			<div class="row" id="star-rating">
+				<div class="stars">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+			</div>
+
+				<div>
+					<p class="review">I was very sketpical of this product at first, but after about a month it has complimented my home very nicely!</p>
+				</div>
+
+
+			<div class="review-pic">
+				<img src="https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-on-pillar-lights.jpg">
+				</div>
+
+			<div class="review-pic">
+				<img src="https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-Wi-Fi-LED-Smart-Bulb-4.jpg">
+			</div>
+		</div>
+
+		<div class="review-container">
+
+			<div class="column">
+				<p>May 25th, 2020</p>
+				<p>Jordan Poe</p>
+			</div> 
+		
+			<div class="row" id="star-rating">
+				<div class="stars">
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<i class="fa fa-star" aria-hidden="true"></i>
+				</div>
+			</div>
+
+				<div>
+					<p class="review">These were a lot cooler than I thought they would be. Adds a nice tough to my home, although I don't think this specific bulb works the best for me, so I'll be trying out the other ones.</p>
+				</div>
+
+		</div>
+
+	</div>
+
+	<h3 class="nav-mod-h3">About Page Module</h3>
+
+		<div class="row">
+		
+		<div class="banner-container">
+				<div class="banner-video">
+					<video src="https://cdn.shopify.com/s/files/1/0219/0638/files/Video_1.mp4?v=1592806741" loop muted playsinline autoplay data-video="0">
+					</video>
+				</div>
+		</div>
+
+		<div class="mission">
+			<h1>MISSION STATEMENT</h1>
+			<p>Bringing a modern touch to your home with the use of quick and easy customizations through our products and app</p>
+		</div>
+
+	</div>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="column">
+
+				<div class="about-section">
+					<h2>ABOUT US</h2>
+					<p>Here at Lumin we strive to bring the most customizable and modern twists to each home. Our goal is to have our products used in any area of your home and even outdoors! We hire some of the best engineers and consult with interior designs to come up with the most streamline designs for all of our products to suit your home, from custom light bulbs to unique home entertainment accessories and everything in between.</p>
+				</div>
+
+			</div>
+
+			<div class="column">
+				<div class="about-section2">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Screen_Shot_2019-09-19_at_1.21.27_pm_1080x.png?v=1570097647">
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+
+	<h3 class="nav-mod-h3">Contact Page Module</h3>
+
+<div class="container">
+	<div class="row">
+		<h1 class="title">CONTACT US</h1>
+	</div>
+
+		<div class="row-contact">
+
+			<div class="column">
+				<div class="contact-pic">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Downlights_Context_2_900x.png?v=1570097951">
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="contact-pic">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Easy_on_the_eye_900x.jpg?v=1570096898">
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="contact-pic">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/LIFX-Livingroom-01-C02_1080x.jpg?v=1570098288">
+				</div>
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="column"> <!-- left column -->
+				<div class="left-column">
+
+				<div class="row">
+					<p class="contact-subtitle">Still have a question? Send us an e-mail!</p>
+				</div>
+
+				<div class="row">
+
+					<div class="column">
+						<p>First Name</p>
+					</div>
+
+					<div class="column">
+						<p>Last Name</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="column input-column">
+						<input type="text" id="fname" name="fname" placeholder="First Name">
+					</div>
+
+					<div class="column input-column">
+						<input type="text" id="fname" name="fname" placeholder="Last Name">
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="column">
+						<p>E-mail Address</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="column input-column">
+						<input type="text" id="email" name="email" placeholder="E-mail Address">
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="column">
+						<p>Title:</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="column input-column">
+						<input type="text" id="title" name="title" placeholder="Title">
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="column">
+						<p>Message</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="column input-column">
+						<textarea rows="6" cols="6" name="message" placeholder="Message"></textarea>
+					</div>
+
+				</div>
+
+				<div class="row">
+					<a href="#" class="send-message-btn">Send Message</a>
+				</div>
+
+				</div>
+			</div>
+
+			<div class="column"> <!-- right column -->
+
+				<div class="right-column">
+
+				<div class="row">
+					<p class="contact-subtitle">You can also reach us by Phone!</p>
+				</div>
+
+				<div class="row">
+					<p class="number-title">North American Customers</p>
+					<div class="row">
+					<p class="phone-number">1-800-837-4834</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<p class="number-title">International Customers</p>
+					<div class="row">
+					<p class="phone-number">1-883-293-2349</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<a href="#"><img src="img/socials.png" id="contact-socials"></a>
+				</div>
+
+				</div>
+
+			</div>
+
+			</div> <!-- end of right column -->
+
+
+		<h3 class="nav-mod-h3">Event Module</h3>
+
+		<div class="row">
+				<h1 class="title">EVENTS</h1>
+
+			</div>
+
+			<div class="row">
+
+					<div class="event-pic">
+						<a  href="eventDetails.html"> 
+							<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Contextual_Z_Strip_-_2_1500x.png?v=1570097624">
+						</a>
+					</div>
+
+				<div class="column event-description">
+						<h2>Home Show</h2>
+						<p class="event-date">August 25th, 2020</p>
+						<p>Join us for an evening full of showcases focused on our new products integrated into any room in your home! Whether you want to enhance your gaming and entertainment setup, or want to add a slight touch of colour to change the ambience of your room every now and then, this is the show for you! There will be multiple exhibitions showcasing how you can use all of our products in the most subtle ways while hiding all the wires. No one would be able to tell! Tickets are running fast!</p>
+						<a href="eventDetails.html" class="read-more-button">Read More</a>
+				</div>
+
+			</div>
+
+	</div>
+
+	<h3 class="nav-mod-h3">Cart Module</h3>
+
+	<div class="container">
+
+				<div class="row">
+					<div class="column">
+						<h2 class="font2">CART</h2>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="column cart-pic-column">
+						<h3>PRODUCT</h2>
+					</div>
+					<div class="column cart-name-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column cart-quant-column">
+						<h3>QUANITY</h3>
+					</div>
+					<div class="column cart-price-column">
+						<h3>PRICE</h3>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="column cart-pic-column">
+						<div class="item-cart-pic">
+							<a href="itemDetails.html">
+								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+							</a>
+						</div>
+					</div>
+					<div class="column cart-name-column">
+						<a href="itemDetails.html">
+							<p class="cart-text">Whimsical Bulb</p>
+						</a>
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column cart-quant-column">
+						<p>1</p>
+					</div>
+					<div class="column cart-price-column">
+						<h3>$45</h3>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="column cart-pic-column">
+						<div class="item-cart-pic">
+							<a href="itemDetails2.html">
+								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+							</a>
+						</div>
+					</div>
+					<div class="column cart-name-column">
+						<a href="itemDetails2.html">	
+							<p class="cart-text">Candle Bulb</p>
+						</a>
+					</div>
+
+					<div class="column ghost-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column cart-quant-column">
+						<p>1</p>
+					</div>
+					<div class="column cart-price-column">
+						<h3>$45</h3>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="column cart-pic-column">
+					</div>
+					<div class="column cart-name-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column cart-quant-column">
+						<h3>SUB-TOTAL</h3>
+					</div>
+					<div class="column cart-price-column">
+						<h3>$90</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="column cart-pic-column">
+					</div>
+					<div class="column cart-name-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column cart-quant-column">
+					</div>
+					<div class="column submit-button-column">
+						<a href="checkout.html" id="submit-button">CHECKOUT</a>
+					</div>
+				</div>
+
+			</div> <!-- end of container -->
+
+			<h3 class="nav-mod-h3">Checkout Module</h3>
+
+			<div class="container"> <!-- start of container -->
+
+			<div class="row">
+				<h2 class="font2">CHECKOUT</h2>
+			</div>
+
+			<div class="row">
+
+				<div class="column checkout-input-column">
+
+					<h3 class="checkout-category-text">SHIPPING INFO</h3>
+
+					<div class="row checkout-content">
+						<div class="row-checkout-titles">
+							<label for="fname">E-mail Address: </label></div>
+						<div class="row">
+							<input type="text" id="fname" name="fname" class="text-box"></div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">First Name: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Last Name: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row checkout-content">
+						<div class="row-checkout-titles">
+							<label for="fname">Address Line 1: </label></div>
+						<div class="row">
+							<input type="text" id="fname" name="fname" class="text-box"></div>
+					</div>
+
+					<div class="row checkout-content">
+						<div class="row-checkout-titles">
+							<label for="fname">Address Line 2: </label></div>
+						<div class="row">
+							<input type="text" id="fname" name="fname" class="text-box"></div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">City: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Province/State: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Country: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Postal/ZIP Code: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="checkout-category-text">BILLING INFO</h3>
+
+					<div class="row checkout-content">
+						<div class="row-checkout-titles">
+							<label for="fname">E-mail Address: </label></div>
+						<div class="row">
+							<input type="text" id="fname" name="fname" class="text-box"></div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">First Name: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Last Name: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row checkout-content">
+						<div class="row-checkout-titles">
+							<label for="fname">Address Line 1: </label></div>
+						<div class="row">
+							<input type="text" id="fname" name="fname" class="text-box"></div>
+					</div>
+
+					<div class="row checkout-content">
+						<div class="row-checkout-titles">
+							<label for="fname">Address Line 2: </label></div>
+						<div class="row">
+							<input type="text" id="fname" name="fname" class="text-box"></div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">City: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Province/State: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Country: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Postal/ZIP Code: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="checkout-category-text">PAYMENT DETAILS</h3>
+
+					<div class="row checkout-content">
+						<div class="row-checkout-titles">
+							<label for="fname">Card Number: </label></div>
+						<div class="row">
+							<input type="text" id="fname" name="fname" class="text-box"></div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Expiry Date: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">CVC: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row checkout-content">
+						<div class="row-checkout-titles">
+							<label for="fname">Name on Card: </label></div>
+						<div class="row">
+							<input type="text" id="fname" name="fname" class="text-box"></div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Phone Number: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row checkout-content">
+								<div class="row-checkout-titles">
+									<label for="fname">Postal/ZIP Code: </label></div>
+								<div class="row">
+									<input type="text" id="fname" name="fname" class="text-box"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<a href="confirm.html" id="submit-button">CONFIRM</a>
+					</div>
+
+				</div>
+
+				<div class="column checkout-summary-column">
+					<div class="checkout-summary">
+						<div class="row summary-row">
+							<p>CART SUMMARY</p>
+						</div>
+						<div class="row summary-row">
+							<div class="column">
+								<div class="item-summary-pic">
+									<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+								</div>
+							</div>
+							<div class="column">
+								<p>Whimsical Bulb</p>
+								<p>x1</p>
+								<p>$45</p>
+							</div>
+						</div>
+
+				<div class="row summary-row">
+							<div class="column">
+								<div class="item-summary-pic">
+									<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+								</div>
+							</div>
+							<div class="column">
+								<p>Candle Bulb</p>
+								<p>x1</p>
+								<p>$45</p>
+							</div>
+						</div>
+
+						<div class="row">
+							<label for="fname">Promo Code: </label> <input type="text" id="fname" name="fname">
+						</div>
+						<div class="row summary-row">
+							<div class="column checkout-summary-total-text">
+								<div class="row-summary-titles">
+									<p>Sub-Total: </p>
+								</div>
+								<div class="row-summary-titles">
+									<p>Tax: </p>
+								</div>
+								<div class="row-summary-titles">
+									<p>Shipping & Handling: </p>
+								</div>
+								<div class="row">
+								</div>
+								<div class="row-summary-titles">
+									<p>Total: </p>
+								</div>
+							</div>
+							<div class="column checkout-summary-total-price">
+									<p class="prices">$90</p>
+									<p class="prices">$10.80</p>
+									<p class="prices">$8</p>
+									<p class="prices">$108.8</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div> <!-- end of container -->
+<!-- END OF CHECKOUT MODULE -->
+
+<h3 class="nav-mod-h3">Checkout Confirmation Module</h3>
+
+<!-- START OF CONFIRM CHECKOUT MODULE -->
+
+		<div class="container"> <!-- start of container -->
+
+			<div class="row">
+				<h2 class="font2">CONFIRM PURCHASE</h2>
+
+			</div>
+
+			<div class="row">
+
+				<div class="column confirmation-info-column">
+
+					<h3 class="checkout-category-text">SHIPPING INFO</h3>
+
+					<div class="row-checkout-titles">
+						<p>customer@hotmail.com</p>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>Julie</p>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>Poe</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-checkout-titles">
+						<p>15170 78th Ave</p>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>Surrey</p>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>BC</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>Canada</p>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>V3S 9R7</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="column confirmation-info-column">
+
+					<h3 class="checkout-category-text">BILLING INFO</h3>
+
+					<div class="row-checkout-titles">
+						<p>customer@hotmail.com</p>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>Julie</p>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>Poe</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row-checkout-titles">
+						<p>15170 78th Ave</p>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>Surrey</p>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>BC</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>Canada</p>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>V3S 9R7</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="column confirmation-info-column">
+
+					<h3 class="checkout-category-text">PAYMENT DETAILS</h3>
+
+					<div class="row-checkout-titles">
+						<p>************5747</p>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>09/25</p>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row-checkout-titles">
+						<p>Julie Poe</p>
+					</div>
+
+					<div class="row">
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>778-867-3927</p>
+							</div>
+						</div>
+						<div class="column checkout-half">
+							<div class="row-checkout-titles">
+								<p>V3S 9R7</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<hr>
+
+			<div class="container">
+
+				<div class="row">
+					<h2 class="font2">SUMMARY</h2>
+				</div>
+
+				<div class="row">
+					<div class="column cart-pic-column">
+						<div class="item-cart-pic">
+							<a href="itemDetails.html">
+								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+							</a>
+						</div>
+					</div>
+					<div class="column cart-name-column">
+						<a href="itemDetails.html">
+							<p class="cart-text">Whimsical Bulb</p>
+						</a>
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column cart-quant-column">
+						<p>x1</p>
+					</div>
+					<div class="column cart-price-column">
+						<h3>$45</h3>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="column cart-pic-column">
+						<div class="item-cart-pic">
+							<a href="itemDetails.html">
+								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+							</a>
+						</div>
+					</div>
+					<div class="column cart-name-column">
+						<a href="itemDeatils2.html">
+							<p class="cart-text">Candle Bulb</p>
+						</a>
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					<div class="column cart-quant-column">
+						<p>x1</p>
+					</div>
+					<div class="column cart-price-column">
+						<h3>$45</h3>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="row">
+					<div class="column cart-pic-column">
+					</div>
+					<div class="column cart-name-column">
+					</div>
+					<div class="column ghost-column">
+					</div>
+					
+					<div class="column cart-quant-column">
+						<div class="row-checkout-titles">
+							<p>Promos Applied: </p>
+						</div>
+						<div class="row-checkout-titles">
+							<p>Sub-Total: </p>
+						</div>
+						<div class="row-checkout-titles">
+							<p>Taxes: </p>
+						</div>
+						<div class="row-checkout-titles">
+							<p>Shipping & Handling: </p>
+						</div>
+						<div class="row-checkout-titles">
+							<h3>TOTAL: </h3>
+						</div>
+					</div>
+					<div class="column cart-price-column">
+							<p>N/A</p>
+							<p>$90</p>
+							<p>$10.80</p>
+							<p>$8</p>
+							<h3>$108.80</h3>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<a href="thanks.html" id="submit-button">COMPLETE PURCHASE</a>
+
+			</div>
+
+		</div> <!-- end of container -->
+<!-- END OF CONFIRM CHECKOUT MODULE -->
+
+<h3 class="nav-mod-h3">Checkout Completed Module</h3>
+
+<!-- START OF CHECKOUT END MODULE -->
+
+		<div class="container"> <!-- start of category-container div -->
+
+			<div class="row"> <!-- beginning of module title row -->
+					<h1 class="title">Thanks for shopping with us!</h1>
+			</div> <!-- end of module title row -->
+
+			<div class="row">
+				<div class="thanks">
+					<i class="fas fa-check-circle" id="confirm-check"></i>
+					<h3 id="order-number">Order #2938173</h3>
+					<h2 class="thanks-fonts">a confirmation e-mail will be sent to you shortly!</h2>
+				
+
+				</div>
+			</div>
+
+			<div class="row">
+				<a href="webpages.html" id="submit-button">HOME</a>
+			</div> <!-- end of category picture row -->
+
+		</div> <!-- end of category-container div -->
+
+<!-- END OF CHECKOUT END MODULE -->
+
+<h3 class="nav-mod-h3">Footer</h3>
+
+<!--footer-->
+
+		<div class="row" id="footer-example">
+			<div class="footer-left">
+				<label for="fname">SIGN UP FOR OUR NEWSLETTER </label> <br>
+				<input type="text" id="fname" name="fname" placeholder="Email Address">
+			</div>
+
+			<div class="footer-line">
+
+			</div>
+
+			<div class="footer-center">
+				<p class="footer-center-center">FOLLOW US</p>
+				<a href="#"><img src="img/socials.png"></a>
+				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
+				<p class="footer-links-small"><a href="https://github.com/Aethoro/P02.3">Github</a>     |     <a href="styleguide.html">Styleguide</a></p>
+			</div>
+
+
+			<div class="footer-right">
+				<h4>123-456-7890</h4>
+				<p>lumin@customerservice.ca</p>
+				<p>4048 Robson St
+				<br>Vancouver, BC
+				<br>V6B 3K9
+				<br>
+				<img src="img/payment-icons.png">
+				</p>
+			</div>
+		</div> 
+</div>
+</div>
 
 	</body>
 

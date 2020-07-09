@@ -1176,10 +1176,11 @@ h2{
 	margin-top: 20px;
 	cursor: pointer;
 	background: #9CEDEB;
+	margin-bottom: 10px;
 }
 
 .read-more-button {
-	width: 110px;
+	width: 105px;
 }
 
 .send-message-btn:hover, .read-more-button:hover, #toggle-button:hover {
@@ -1657,4 +1658,66 @@ input, textarea {
 
 .footer-left input {
 	background: white;
+}
+
+.sitemap {
+	width: 100%;
+}
+
+#heading3 {
+	border-bottom: 0px;
+}
+
+#heading1, #heading2, #heading3{
+	margin-left: 0;
+}
+
+
+code {
+	background-color: #e5e5e5;
+	padding: 10px 30px;
+}
+
+.offBlack-swatch	{
+	background-color: #313639;
+	padding: 10px 20px;
+	}
+
+#offBlack-swatch {
+	color:white;
+	}
+
+.white-swatch {
+	background-color: #f8f8f8;
+	padding: 10px 20px;
+	}
+
+.blue-swatch {
+	background-color: #9CEDEB;
+	padding: 10px 20px;
+	}
+
+.dark {
+background-color: #252525;
+height: 300px;
+margin: 0px 0px;
+}
+
+.light {
+background-color: #9cedeb;
+height: 300px;
+margin: 0px 0px;
+}
+
+.grid-row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.grid-column {
+display: flex;
+flex-direction: column;
+flex-basis: 100%;
+flex: 1;
 }
