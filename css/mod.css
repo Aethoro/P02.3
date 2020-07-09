@@ -696,29 +696,32 @@ p {
 	position: absolute;
 	text-align: left;
 	padding-left: 30px;
-	top: 290px;
+	bottom: 75px;
 	font-weight: lighter;
 }
 
-.price {
-	position: absolute;
+.grid:hover .prod-name {
+	bottom: 55px;
+}
+
+.price, .sale-price {
+	position: relative;
 	text-align: left;
-	top: 325px;
+	top: 15px;
 	padding-left: 30px;
 }
 
 .sale-price {
-	position: absolute;
-	text-align: left;
-	top: 325px;
-	padding-left: 30px;
 	color: red;
 }
 
-.grid i {
+.grid:hover img{
+	opacity: 30%;
+}
+
+.grid i, .grid .overlay i {
 	position: relative;
 	color: black;
-	top: 70px;
 	right: 80px;
 }
 
@@ -1751,4 +1754,9 @@ flex: 1;
 
 .styleguide-column .column {
 	margin: 10px;
+}
+
+.grid:hover .overlay {
+	position: relative;
+	bottom: 100px;
 }
