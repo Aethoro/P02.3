@@ -11,7 +11,7 @@
 	</head>
 
 	<body>
-		<!-- START OF HEADER BAR MODULE -->
+		<!-- NAV BAR -->
 		<div class="nav-container">
 
 			<div class="row" id="nav-example">
@@ -56,38 +56,41 @@
 
 			</div> 
 
-		</div><!-- END OF HEADER BAR MODULE -->
+		</div>
+		<!-- END OF NAV BAR -->
 
-<!-- contact content -->
+<div class="container"> <!-- content container -->
 
-<div class="container">
-
+<!-- title -->
 	<div class="row">
 		<h1 class="title">CONTACT US</h1>
 	</div>
 
+	<section id="contact-pics">
 		<div class="row-contact">
 
 			<div class="column">
 				<div class="contact-pic">
-					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Downlights_Context_2_900x.png?v=1570097951">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Downlights_Context_2_900x.png?v=1570097951" alt="company product photo">
 				</div>
 			</div>
 
 			<div class="column">
 				<div class="contact-pic">
-					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Easy_on_the_eye_900x.jpg?v=1570096898">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Easy_on_the_eye_900x.jpg?v=1570096898" alt="company product photo">
 				</div>
 			</div>
 
 			<div class="column">
 				<div class="contact-pic">
-					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/LIFX-Livingroom-01-C02_1080x.jpg?v=1570098288">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/LIFX-Livingroom-01-C02_1080x.jpg?v=1570098288" alt="company product photo">
 				</div>
 			</div>
 
 		</div>
+	</section>
 
+	<section id="contact-info">
 		<div class="row">
 
 			<div class="column"> <!-- left column -->
@@ -100,23 +103,13 @@
 				<div class="row">
 
 					<div class="column">
-						<p>First Name</p>
+						<label for="fname">First Name</label>
+						<input type="text" id="fname" placeholder="First Name"/>
 					</div>
 
 					<div class="column">
-						<p>Last Name</p>
-					</div>
-
-				</div>
-
-				<div class="row">
-
-					<div class="column input-column">
-						<input type="text" id="fname" name="fname" placeholder="First Name">
-					</div>
-
-					<div class="column input-column">
-						<input type="text" id="fname" name="fname" placeholder="Last Name">
+						<label for="lname">Last Name</label>
+						<input type="text" id="lname" placeholder="Last Name"/>
 					</div>
 
 				</div>
@@ -124,14 +117,7 @@
 				<div class="row">
 
 					<div class="column">
-						<p>E-mail Address</p>
-					</div>
-
-				</div>
-
-				<div class="row">
-
-					<div class="column input-column">
+						<label for="email">E-mail Address</label>
 						<input type="text" id="email" name="email" placeholder="E-mail Address">
 					</div>
 
@@ -140,14 +126,7 @@
 				<div class="row">
 
 					<div class="column">
-						<p>Title:</p>
-					</div>
-
-				</div>
-
-				<div class="row">
-
-					<div class="column input-column">
+						<label for="title">Title:</label>
 						<input type="text" id="title" name="title" placeholder="Title">
 					</div>
 
@@ -156,15 +135,8 @@
 				<div class="row">
 
 					<div class="column">
-						<p>Message</p>
-					</div>
-
-				</div>
-
-				<div class="row">
-
-					<div class="column input-column">
-						<textarea rows="6" cols="6" name="message" placeholder="Message"></textarea>
+						<label for="message">Message</label>
+						<textarea rows="6" cols="6" id="message" placeholder="Message"></textarea>
 					</div>
 
 				</div>
@@ -199,7 +171,7 @@
 				</div>
 
 				<div class="row">
-					<a href="#"><img src="img/socials.png" id="contact-socials"></a>
+					<a href="#"><img src="img/socials.png" id="contact-socials" alt="social media icons"></a>
 				</div>
 
 				</div>
@@ -207,19 +179,17 @@
 			</div>
 
 			</div> <!-- end of right column -->
-
+			</section>
 		</div>
 
-	</div> <!-- end of container div -->
 
-<!-- contact content-->
 
-		</div> <!-- end of category-container div -->
 
+<!-- FOOTER -->
 		<div class="row" id="footer-example">
 			<div class="footer-left">
 				<label for="fname">SIGN UP FOR OUR NEWSLETTER </label> <br>
-				<input type="text" id="fname" name="fname" placeholder="Email Address">
+				<input type="text" id="emailfooter" placeholder="Email Address">
 			</div>
 
 			<div class="footer-line">
@@ -228,7 +198,7 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<a href="#"><img src="img/socials.png"></a>
+				<a href="#"><img src="img/socials.png" alt="social media icons"></a>
 				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
 				<p class="footer-links-small"><a href="https://github.com/Aethoro/P02.3">Github</a>     |     <a href="styleguide.html">Styleguide</a></p>
 			</div>
@@ -241,7 +211,7 @@
 				<br>Vancouver, BC
 				<br>V6B 3K9
 				<br>
-				<img src="img/payment-icons.png">
+				<img src="img/payment-icons.png" alt="accepted forms of payment">
 				</p>
 			</div>
 		</div> 

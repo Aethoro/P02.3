@@ -437,6 +437,7 @@ body{
 	text-align: center;
 	background-color:#9CEDEB;
 	height: 335px;
+	max-width: 300px
 }
 
 .featured-product a{
@@ -1755,3 +1756,41 @@ flex: 1;
 	position: relative;
 	bottom: 100px;
 }
+
+.cart-text{
+	color: black;
+}
+
+.featured-product:hover {
+	background-color: rgba(156,237,235,.4);
+}
+
+.nav-container-example {
+    position: sticky; 
+    top:0;
+}
+
+#toggle-button2 {
+    background: #9CEDEB;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+} /* used https://stackoverflow.com/questions/11023816/toggle-divs-without-using-javascript to help with this portion */
+
+#star-rating2 {
+	justify-content: left;
+}
+
+
+
+
+
+
+
+
+
+

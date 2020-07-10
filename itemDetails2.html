@@ -11,7 +11,7 @@
 	</head>
 
 	<body>
-		<!-- START OF HEADER BAR MODULE -->
+		<!-- START OF NAV BAR  -->
 		<div class="nav-container">
 
 			<div class="row" id="nav-example">
@@ -56,45 +56,47 @@
 
 			</div> 
 
-		</div><!-- END OF HEADER BAR MODULE -->
+		</div>
 
 
-<!-- product details -->
+<!-- product information container -->
 
-<div class="container"> <!-- start of container -->
+<div class="container">
+		<!-- path -->
 
 			<p class="path">PRODUCTS / BULBS</p>
+				<!--pictures and main information -->
 
 				<div class="row">
 
 					<div class="product-pictures"> <!-- start of small product photos column-->
 						<div class="row">
 							<div class="side-pics">
-								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821" alt="bulb lit up">
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="side-pics">
-								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.29_pm_720x.jpg?v=1583382662">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.29_pm_720x.jpg?v=1583382662" alt="bulb turned off">
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="side-pics">
-								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Contextual_1_7cf089a2-c075-40ad-b4b6-8f02c22b3ea4_1080x.jpg?v=1583382582">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Contextual_1_7cf089a2-c075-40ad-b4b6-8f02c22b3ea4_1080x.jpg?v=1583382582" alt="bulb used in a home with glowing purple hues">
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="side-pics">
-								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Contextual_2_c060e91e-cf88-40e5-bba2-021b510402ca_1080x.jpg?v=1583382582">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Contextual_2_c060e91e-cf88-40e5-bba2-021b510402ca_1080x.jpg?v=1583382582" alt="bulb used with warmer candle hues">
 							</div>
 						</div>
 					</div> <!-- end of small product photos column-->
 
 						<div class="item-pic">
-							<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+							<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821" alt="main candle bulb photo">
 						</div>
 
 
@@ -116,6 +118,7 @@
 
 				</div>
 <section id="review">
+</section>
 
 				<p class="sub-titles">DETAILS</p>
 
@@ -137,17 +140,11 @@
 
 				</div>
 
-		</div> <!-- end of container -->
+		</div>
 
-<!-- END OF DETAILED ITEM MODULE -->
-
-
-<!-- START OF REVIEW SECTION MODULE -->
-
-
-	<div class="container"> <!-- start of container div -->
+	<!-- review container -->
+	<div class="container"> 
 		<p class="sub-titles">Reviews</p>
-
 		
 		<input type="checkbox" style="display: none" id="cb">
 		<label id="toggle-button"for="cb">Write A Review</label>
@@ -155,36 +152,36 @@
 
 			<div class="write-review">
 				<div class="close-button">
-					<label id="toggle-button x-review" for="cb">X</label>
+					<label id="toggle-button-x-review" for="cb">X</label>
 					
 				</div>
 				<h2>Write a Review!</h2>
 				<div class="row star-input-row">
 					<h3>Rating: </h3>
 					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating2" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating3" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating4" class="fa fa-star-o" aria-hidden="true"></i>
+					<i id="empty-rating5" class="fa fa-star-o" aria-hidden="true"></i>
 				</div>
 				<div class="row input-row">
 					<label for="title">Title of Review: </label>
-					<input type="text" name="title">
+					<input type="text" id="title">
 				</div>
 				<div class="row input-row">
-					<label for="title">Name of Reviewer: </label>
-					<input type="text" name="title">
+					<label for="name-of-reviewer">Name of Reviewer: </label>
+					<input type="text" id="name-of-reviewer">
 				</div>
 				<div class="row input-row">
-					<label for="title">Review: </label>
-					<textarea rows="4" cols="24" name="message" placeholder="Review"></textarea>
+					<label for="review-message">Review: </label>
+					<textarea rows="4" cols="24" name="message" placeholder="Review" id="review-message"></textarea>
 				</div>
 				<div class="row input-row">
 					<p>Add Image</p>
 					<p id="add-box">+</p>
 				</div>
-				<input type="checkbox" style="display: none" id="cb">
-				<label id="toggle-button"for="cb">Submit Review</label>
+				<input type="checkbox" style="display: none" id="cb2">
+				<label id="toggle-button2"for="cb2">Submit Review</label>
 				
 			</div>
 			<label class="exit-review" for="cb">x</label>
@@ -213,11 +210,11 @@
 
 
 			<div class="review-pic">
-				<img src="https://cdn.mos.cms.futurecdn.net/S6iucyJ4TKYTXRM3RpBzNP-970-80.jpg">
+				<img src="https://cdn.mos.cms.futurecdn.net/S6iucyJ4TKYTXRM3RpBzNP-970-80.jpg" alt="customers review picture">
 				</div>
 
 			<div class="review-pic">
-				<img src="https://cdn.mos.cms.futurecdn.net/KKCEDwDU6pqrRYHNSTG8KP-970-80.jpg">
+				<img src="https://cdn.mos.cms.futurecdn.net/KKCEDwDU6pqrRYHNSTG8KP-970-80.jpg" alt="customers review picture">
 			</div>
 		</div>
 
@@ -228,7 +225,7 @@
 				<p>Jordan Poe</p>
 			</div> 
 		
-			<div class="row" id="star-rating">
+			<div class="row" id="star-rating2">
 				<div class="stars">
 					<i class="fa fa-star" aria-hidden="true"></i>
 					<i class="fa fa-star" aria-hidden="true"></i>
@@ -242,11 +239,10 @@
 
 		</div>
 
-	</div> <!-- end of container div -->
-</section>
+	</div> 
 
 
-<!-- product details -->
+<!-- FOOTER -->
 		<div class="row" id="footer-example">
 			<div class="footer-left">
 				<label for="fname">SIGN UP FOR OUR NEWSLETTER </label> <br>
@@ -259,7 +255,7 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<a href="#"><img src="img/socials.png"></a>
+				<a href="#"><img src="img/socials.png" alt="social media icons"></a>
 				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
 				<p class="footer-links-small"><a href="https://github.com/Aethoro/P02.3">Github</a>     |     <a href="styleguide.html">Styleguide</a></p>
 			</div>
@@ -272,7 +268,7 @@
 				<br>Vancouver, BC
 				<br>V6B 3K9
 				<br>
-				<img src="img/payment-icons.png">
+				<img src="img/payment-icons.png" alt="accepted forms of payment icon">
 				</p>
 			</div>
 		</div> 
