@@ -439,6 +439,7 @@ body{
 	text-align: center;
 	background-color:#9CEDEB;
 	height: 335px;
+	max-width: 300px
 }
 
 .featured-product a{
@@ -1763,6 +1764,10 @@ flex: 1;
 
 .cart-text{
 	color: black;
+}
+
+.featured-product:hover {
+	background-color: rgba(156,237,235,.4);
 }
 
 
