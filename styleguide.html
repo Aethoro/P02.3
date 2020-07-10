@@ -31,7 +31,7 @@
 
 		<div class="container styleguide-column">
 
-		&nbsp<p><a href="https://github.com/Aethoro/P02.2" target="blank">Github Link</a>
+		<p><a href="https://github.com/Aethoro/P02.2" target="blank">Github Link</a>
 
 			<h1>Basic Interactive Elements</h1>
 
@@ -66,8 +66,8 @@
 					<div class="column">
 
 						<h3>Submit and Reset Buttons</h3>
-						<a href="#" id="submit-button">Submit</a>
-						<a href="#" id="reset-button">Reset</a>
+						<a href="#" class="submit-button">Submit</a>
+						<a href="#" class="reset-button">Reset</a>
 
 						<code>
 							&lt;a href="#" id="submit-button"&gt;Submit&lt;/a&gt; <br>
@@ -81,7 +81,7 @@
 					<div class="column">
 
 						<h3>Text Input Field and Label</h3>
-						<label for="fname">First name: </label> <input type="text" id="fname" name="fname">
+						<label for="input">First name: </label> <input type="text" id="input" name="input">
 
 						<code>
 							&lt;label for="fname"&gt;First name: &lt;/label&gt; &lt;input type="text" id="fname" name="fname"&gt;
@@ -308,32 +308,32 @@
 					<div class="product-pictures"> <!-- start of small product photos column-->
 						<div class="row">
 							<div class="side-pics">
-								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207" alt="preview image">
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="side-pics">
-								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_61bmo2lW_1080x.jpg?v=1570090207">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_61bmo2lW_1080x.jpg?v=1570090207" alt="preview image">
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="side-pics">
-								<img class="small-pic" id="side-2" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Downlights_Bitmap_Copy_4_1080x.png?v=1570090207">
+								<img class="small-pic" id="side-2" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Downlights_Bitmap_Copy_4_1080x.png?v=1570090207" alt="preview image">
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="side-pics">
-								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Whole_House_Image-optimised_1080x.jpg?v=1570151633">
+								<img class="small-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/Whole_House_Image-optimised_1080x.jpg?v=1570151633" alt="preview image">
 							</div>
 						</div>
 					</div> <!-- end of small product photos column-->
 
 					<div class="column" id="main-pic">
 						<div class="item-pic">
-							<img id="pic-1" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+							<img id="pic-1" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207" alt="main image">
 						</div>
 					</div>
 
@@ -611,7 +611,7 @@
 					<div class="category">
 							
 							<a href="productList.html">
-								<img class="category-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/candle_ww_lit_e12_1080x.jpg?v=1591846321">
+								<img class="category-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/candle_ww_lit_e12_1080x.jpg?v=1591846321" alt="bulb category">
 								<p class="category-name">Bulbs</p>
 							</a>
 			
@@ -620,7 +620,7 @@
 					<div class="category">
 
 						<a href="homeEntertainment.html">
-							<img class="category-pic" src="img/category3.jpg">
+							<img class="category-pic" src="img/category3.jpg" alt="home entertainment category">
 							<p class="category-name">Home Entertainment</p>
 						</a>
 
@@ -629,7 +629,7 @@
 					<div class="category">
 		
 						<a href="lightStrips.html">
-							<img class="category-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/LIFXZ-StarterKit-2-Lit_900x.jpg?v=1570090163">
+							<img class="category-pic" src="https://cdn.shopify.com/s/files/1/0219/0638/products/LIFXZ-StarterKit-2-Lit_900x.jpg?v=1570090163" alt="light strips category">
 							<p class="category-name">Light Strips</p>
 						</a>
 
@@ -638,7 +638,7 @@
 					<div class="category">
 
 						<a href="accessories.html">
-							<img class="category-pic" src="img/switch.png">
+							<img class="category-pic" src="img/switch.png" alt="accessories category">
 							<p class="category-name">Accessories</p>
 						</a>
 
@@ -687,7 +687,7 @@
 
 		</div>
 
-		<!--- product list ---->
+		<!-- product list -->
 
 		<h3 class="nav-mod-h3">Product List Page</h3>
 	<div class="container"> <!-- start of product list container -->
@@ -730,7 +730,7 @@
 			<div class="column">
 				<a href="itemDetails.html">
 					<div class="grid">
-						<img class="list-item" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_900x.jpg?v=1570090207">
+						<img class="list-item" src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_900x.jpg?v=1570090207" alt="whimsical bulb">
 						<h2 class="prod-name">Whimsical Bulb</h2>
 						<h3 class="price">$45</h3>
 						<i class="fa fa-star" aria-hidden="true"></i>
@@ -749,7 +749,7 @@
 
 				<a href="itemDetails2.html">
 					<div class="grid">
-						<img class="list-item" src="img/noStock.jpg">
+						<img class="list-item" src="img/noStock.jpg" alt="candle bulb">
 						<h2 class="prod-name">Candle Bulb</h2>
 						<h3 class="price">$45</h3>
 						<i class="fa fa-star" aria-hidden="true"></i>
@@ -767,9 +767,9 @@
 			<div class="column">
 				<a href="itemDetails3.html">
 					<div class="grid">
-						<img class="list-item" src="img/sale.jpg">
+						<img class="list-item" src="img/sale.jpg" alt="level bulb">
 						<h2 class="prod-name">Level Bulb</h2>
-						<h3 class="sale-price"><strike>$50</strike>     $30</h3>
+						<h3 class="sale-price">$30</h3>
 						<i class="fa fa-star" aria-hidden="true"></i>
 						<i class="fa fa-star" aria-hidden="true"></i>
 						<i class="fa fa-star" aria-hidden="true"></i>
@@ -847,22 +847,22 @@
 
 		
 		<input type="checkbox" style="display: none" id="cb">
-		<label id="toggle-button"for="cb">Write A Review</label>
+		<label class="toggle-button" for="cb">Write A Review</label>
 		<div class="review-popup">
 
 			<div class="write-review">
 				<div class="close-button">
-					<label id="toggle-button x-review" for="cb">X</label>
+					<label class="toggle-button" id="x-review" for="cb">X</label>
 					
 				</div>
 				<h2>Write a Review!</h2>
 				<div class="row star-input-row">
 					<h3>Rating: </h3>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
-					<i id="empty-rating" class="fa fa-star-o" aria-hidden="true"></i>
+					<i class="empty-rating fa fa-star-o" aria-hidden="true"></i>
+					<i class="empty-rating fa fa-star-o" aria-hidden="true"></i>
+					<i class="empty-rating fa fa-star-o" aria-hidden="true"></i>
+					<i class="empty-rating fa fa-star-o" aria-hidden="true"></i>
+					<i class="empty-rating fa fa-star-o" aria-hidden="true"></i>
 				</div>
 				<div class="row input-row">
 					<label for="title">Title of Review: </label>
@@ -880,8 +880,8 @@
 					<p>Add Image</p>
 					<p id="add-box">+</p>
 				</div>
-				<input type="checkbox" style="display: none" id="cb">
-				<label id="toggle-button"for="cb">Submit Review</label>
+				<input type="checkbox" style="display: none">
+				<label class="toggle-button" for="cb">Submit Review</label>
 				
 			</div>
 			<label class="exit-review" for="cb">x</label>
@@ -894,7 +894,7 @@
 				<p>Jane Doe</p>
 			</div> 
 
-			<div class="row" id="star-rating">
+			<div class="row star-rating">
 				<div class="stars">
 					<i class="fa fa-star" aria-hidden="true"></i>
 					<i class="fa fa-star" aria-hidden="true"></i>
@@ -904,17 +904,16 @@
 				</div>
 			</div>
 
-				<div>
-					<p class="review">I was very sketpical of this product at first, but after about a month it has complimented my home very nicely!</p>
-				</div>
-
-
-			<div class="review-pic">
-				<img src="https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-on-pillar-lights.jpg">
-				</div>
+			<div>
+				<p class="review">I was very sketpical of this product at first, but after about a month it has complimented my home very nicely!</p>
+			</div>
 
 			<div class="review-pic">
-				<img src="https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-Wi-Fi-LED-Smart-Bulb-4.jpg">
+				<img src="https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-on-pillar-lights.jpg" alt="review image">
+				</div>
+
+			<div class="review-pic">
+				<img src="https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-Wi-Fi-LED-Smart-Bulb-4.jpg" alt="review image">
 			</div>
 		</div>
 
@@ -925,7 +924,7 @@
 				<p>Jordan Poe</p>
 			</div> 
 		
-			<div class="row" id="star-rating">
+			<div class="row star-rating">
 				<div class="stars">
 					<i class="fa fa-star" aria-hidden="true"></i>
 					<i class="fa fa-star" aria-hidden="true"></i>
@@ -939,23 +938,71 @@
 
 		</div>
 
+		<div class="row">
+				<div class="column">
+					<p>HTML</p>
+					<code>
+						&lt;div class=&quot;review-container&quot;&gt;<br> &lt;div class=&quot;column&quot;&gt;<br> &lt;p&gt;May 25th, 2020&lt;/p&gt;<br> &lt;p&gt;Jane Doe&lt;/p&gt;<br> &lt;/div&gt;<br> &lt;div class=&quot;row&quot; id=&quot;star-rating&quot;&gt;<br> &lt;div class=&quot;stars&quot;&gt;<br> &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br> &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br> &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br> &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br> &lt;i class=&quot;fa fa-star&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;<br> &lt;/div&gt;<br> &lt;/div&gt;<br> &lt;div&gt;<br> &lt;p class=&quot;review&quot;&gt;I was very sketpical of this product at first, but after about a month it has complimented my home very nicely!&lt;/p&gt;<br> &lt;/div&gt;<br> &lt;div class=&quot;review-pic&quot;&gt;<br> &lt;img src=&quot;https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-on-pillar-lights.jpg&quot;&gt;<br> &lt;/div&gt;<br> &lt;div class=&quot;review-pic&quot;&gt;<br> &lt;img src=&quot;https://www.cravingtech.com/blog/wp-content/uploads/2019/09/LIFX-GU10-Wi-Fi-LED-Smart-Bulb-4.jpg&quot;&gt;<br> &lt;/div&gt;<br> &lt;/div&gt;
+
+					</code>
+				</div>
+				<div class="column">
+					<p>CSS</p>
+					<code>
+						.row{<br>
+						display: flex;<br>
+						flex-direction: row;<br>
+						flex-wrap: wrap;<br>
+						width: auto;<br>
+						justify-content: space-between;<br>
+						margin: 0px 50px;<br>
+						}<br>
+						.column {<br>
+						  display: flex;<br>
+						  justify-content: space-around;<br>
+						  flex-direction: column;<br>
+						  flex-basis: 100%;<br>
+						  padding: 20px 20px;<br>
+						  flex: 1;<br>
+						}<br>
+						.review {<br>
+							margin: 10px 0px;<br>
+							flex: 2;<br>
+						}<br>
+						.review-container {<br>
+							padding: 20px 0px;<br>
+						}<br>
+						.review-info {<br>
+							position: relative;<br>
+							right: 20;<br>
+						}<br>
+						.stars i{<br>
+							color: black;<br>
+						}<br>
+						i:hover {<br>
+							color: #9CEDEB;<br>
+						}
+					</code>
+				</div>
+			</div>
+
 	</div>
 
 	<h3 class="nav-mod-h3">About Page Module</h3>
 
-		<div class="row">
-		
-		<div class="banner-container">
-				<div class="banner-video">
-					<video src="https://cdn.shopify.com/s/files/1/0219/0638/files/Video_1.mp4?v=1592806741" loop muted playsinline autoplay data-video="0">
-					</video>
-				</div>
-		</div>
+	<div class="row">
+	
+	<div class="banner-container">
+			<div class="banner-video">
+				<video src="https://cdn.shopify.com/s/files/1/0219/0638/files/Video_1.mp4?v=1592806741" loop muted playsinline autoplay data-video="0">
+				</video>
+			</div>
+	</div>
 
-		<!-- <div class="mission">
-			<h1>MISSION STATEMENT</h1>
-			<p>Bringing a modern touch to your home with the use of quick and easy customizations through our products and app</p>
-		</div> -->
+	<!-- <div class="mission">
+		<h1>MISSION STATEMENT</h1>
+		<p>Bringing a modern touch to your home with the use of quick and easy customizations through our products and app</p>
+	</div> -->
 
 	</div>
 
@@ -974,12 +1021,44 @@
 
 			<div class="column">
 				<div class="about-section2">
-					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Screen_Shot_2019-09-19_at_1.21.27_pm_1080x.png?v=1570097647">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Screen_Shot_2019-09-19_at_1.21.27_pm_1080x.png?v=1570097647" alt="about us">
 				</div>
 
 			</div>
 
 		</div>
+
+		<div class="row">
+				<div class="column">
+					<p>HTML</p>
+					<code>
+						&lt;div class=&quot;banner-container&quot;&gt;<br> &lt;div class=&quot;banner-video&quot;&gt;<br> &lt;video src=&quot;https://cdn.shopify.com/s/files/1/0219/0638/files/Video_1.mp4?v=1592806741&quot; loop muted playsinline autoplay data-video=&quot;0&quot;&gt;<br> &lt;/video&gt;<br> &lt;/div&gt;<br> &lt;/div&gt;<br> &lt;/div&gt;<br> &lt;div class=&quot;container&quot;&gt;<br> &lt;div class=&quot;row&quot;&gt;<br> &lt;div class=&quot;column&quot;&gt;<br> &lt;div class=&quot;about-section&quot;&gt;<br> &lt;h2&gt;ABOUT US&lt;/h2&gt;<br> &lt;p&gt;Here at Lumin we strive to bring the most customizable and modern twists to each home. Our goal is to have our products used in any area of your home and even outdoors! We hire some of the best engineers and consult with interior designs to come up with the most streamline designs for all of our products to suit your home, from custom light bulbs to unique home entertainment accessories and everything in between.&lt;/p&gt;<br> &lt;/div&gt;<br> &lt;/div&gt;<br> &lt;div class=&quot;column&quot;&gt;<br> &lt;div class=&quot;about-section2&quot;&gt;<br> &lt;img src=&quot;https://cdn.shopify.com/s/files/1/0219/0638/files/Screen_Shot_2019-09-19_at_1.21.27_pm_1080x.png?v=1570097647&quot;&gt;<br> &lt;/div&gt;<br> &lt;/div&gt;<br> &lt;/div&gt;<br> &lt;/div&gt;
+
+
+					</code>
+				</div>
+				<div class="column">
+					<p>CSS</p>
+					<code>
+						.row{<br>
+						display: flex;<br>
+						flex-direction: row;<br>
+						flex-wrap: wrap;<br>
+						width: auto;<br>
+						justify-content: space-between;<br>
+						margin: 0px 50px;<br>
+						}<br>
+						.column {<br>
+						  display: flex;<br>
+						  justify-content: space-around;<br>
+						  flex-direction: column;<br>
+						  flex-basis: 100%;<br>
+						  padding: 20px 20px;<br>
+						  flex: 1;<br>
+						}
+					</code>
+				</div>
+			</div>
 	</div>
 
 
@@ -994,19 +1073,19 @@
 
 			<div class="column">
 				<div class="contact-pic">
-					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Downlights_Context_2_900x.png?v=1570097951">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Downlights_Context_2_900x.png?v=1570097951" alt="contact us">
 				</div>
 			</div>
 
 			<div class="column">
 				<div class="contact-pic">
-					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Easy_on_the_eye_900x.jpg?v=1570096898">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Easy_on_the_eye_900x.jpg?v=1570096898" alt="contact us">
 				</div>
 			</div>
 
 			<div class="column">
 				<div class="contact-pic">
-					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/LIFX-Livingroom-01-C02_1080x.jpg?v=1570098288">
+					<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/LIFX-Livingroom-01-C02_1080x.jpg?v=1570098288" alt="contact us">
 				</div>
 			</div>
 
@@ -1036,11 +1115,11 @@
 				<div class="row">
 
 					<div class="column input-column">
-						<input type="text" id="fname" name="fname" placeholder="First Name">
+						<input type="text" name="fname" placeholder="First Name">
 					</div>
 
 					<div class="column input-column">
-						<input type="text" id="fname" name="fname" placeholder="Last Name">
+						<input type="text" name="fname" placeholder="Last Name">
 					</div>
 
 				</div>
@@ -1056,7 +1135,7 @@
 				<div class="row">
 
 					<div class="column input-column">
-						<input type="text" id="email" name="email" placeholder="E-mail Address">
+						<input type="text" id="email-contact" name="email-contact" placeholder="E-mail Address">
 					</div>
 
 				</div>
@@ -1123,7 +1202,7 @@
 				</div>
 
 				<div class="row">
-					<a href="#"><img src="img/socials.png" id="contact-socials"></a>
+					<a href="#"><img src="img/socials.png" id="contact-socials" alt="socials"></a>
 				</div>
 
 				</div>
@@ -1144,7 +1223,7 @@
 
 					<div class="event-pic">
 						<a  href="eventDetails.html"> 
-							<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Contextual_Z_Strip_-_2_1500x.png?v=1570097624">
+							<img src="https://cdn.shopify.com/s/files/1/0219/0638/files/Contextual_Z_Strip_-_2_1500x.png?v=1570097624" alt="event banner">
 						</a>
 					</div>
 
@@ -1171,7 +1250,7 @@
 
 				<div class="row">
 					<div class="column cart-pic-column">
-						<h3>PRODUCT</h2>
+						<h3>PRODUCT</h3>
 					</div>
 					<div class="column cart-name-column">
 					</div>
@@ -1193,7 +1272,7 @@
 					<div class="column cart-pic-column">
 						<div class="item-cart-pic">
 							<a href="itemDetails.html">
-								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207" alt="whimsical bulb">
 							</a>
 						</div>
 					</div>
@@ -1220,7 +1299,7 @@
 					<div class="column cart-pic-column">
 						<div class="item-cart-pic">
 							<a href="itemDetails2.html">
-								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821" alt="candle bulb">
 							</a>
 						</div>
 					</div>
@@ -1273,7 +1352,7 @@
 					<div class="column cart-quant-column">
 					</div>
 					<div class="column submit-button-column">
-						<a href="checkout.html" id="submit-button">CHECKOUT</a>
+						<a href="checkout.html" class="submit-button">CHECKOUT</a>
 					</div>
 				</div>
 
@@ -1295,9 +1374,9 @@
 
 					<div class="row checkout-content">
 						<div class="row-checkout-titles">
-							<label for="fname">E-mail Address: </label></div>
+							<label for="email">E-mail Address: </label></div>
 						<div class="row">
-							<input type="text" id="fname" name="fname" class="text-box"></div>
+							<input type="text" id="email" name="email" class="text-box"></div>
 					</div>
 
 					<div class="row">
@@ -1312,42 +1391,42 @@
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Last Name: </label></div>
+									<label for="lname">Last Name: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="lname" name="lname" class="text-box"></div>
 							</div>
 						</div>
 					</div>
 
 					<div class="row checkout-content">
 						<div class="row-checkout-titles">
-							<label for="fname">Address Line 1: </label></div>
+							<label for="address1">Address Line 1: </label></div>
 						<div class="row">
-							<input type="text" id="fname" name="fname" class="text-box"></div>
+							<input type="text" id="address1" name="address1" class="text-box"></div>
 					</div>
 
 					<div class="row checkout-content">
 						<div class="row-checkout-titles">
-							<label for="fname">Address Line 2: </label></div>
+							<label for="address2">Address Line 2: </label></div>
 						<div class="row">
-							<input type="text" id="fname" name="fname" class="text-box"></div>
+							<input type="text" id="address2" name="address2" class="text-box"></div>
 					</div>
 
 					<div class="row">
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">City: </label></div>
+									<label for="city">City: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="city" name="city" class="text-box"></div>
 							</div>
 						</div>
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Province/State: </label></div>
+									<label for="state">Province/State: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="state" name="state" class="text-box"></div>
 							</div>
 						</div>
 					</div>
@@ -1356,17 +1435,17 @@
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Country: </label></div>
+									<label for="count">Country: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="count" name="count" class="text-box"></div>
 							</div>
 						</div>
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Postal/ZIP Code: </label></div>
+									<label for="post">Postal/ZIP Code: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="post" name="post" class="text-box"></div>
 							</div>
 						</div>
 					</div>
@@ -1375,59 +1454,59 @@
 
 					<div class="row checkout-content">
 						<div class="row-checkout-titles">
-							<label for="fname">E-mail Address: </label></div>
+							<label for="emailb">E-mail Address: </label></div>
 						<div class="row">
-							<input type="text" id="fname" name="fname" class="text-box"></div>
+							<input type="text" id="emailb" name="emailb" class="text-box"></div>
 					</div>
 
 					<div class="row">
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">First Name: </label></div>
+									<label for="fnameb">First Name: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="fnameb" name="fnameb" class="text-box"></div>
 							</div>
 						</div>
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Last Name: </label></div>
+									<label for="lnameb">Last Name: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="lnameb" name="lnameb" class="text-box"></div>
 							</div>
 						</div>
 					</div>
 
 					<div class="row checkout-content">
 						<div class="row-checkout-titles">
-							<label for="fname">Address Line 1: </label></div>
+							<label for="address1b">Address Line 1: </label></div>
 						<div class="row">
-							<input type="text" id="fname" name="fname" class="text-box"></div>
+							<input type="text" id="address1b" name="address1b" class="text-box"></div>
 					</div>
 
 					<div class="row checkout-content">
 						<div class="row-checkout-titles">
-							<label for="fname">Address Line 2: </label></div>
+							<label for="address2b">Address Line 2: </label></div>
 						<div class="row">
-							<input type="text" id="fname" name="fname" class="text-box"></div>
+							<input type="text" id="address2b" name="address2b" class="text-box"></div>
 					</div>
 
 					<div class="row">
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">City: </label></div>
+									<label for="cityb">City: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="cityb" name="cityb" class="text-box"></div>
 							</div>
 						</div>
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Province/State: </label></div>
+									<label for="stateb">Province/State: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="stateb" name="stateb" class="text-box"></div>
 							</div>
 						</div>
 					</div>
@@ -1436,17 +1515,17 @@
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Country: </label></div>
+									<label for="countb">Country: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="countb" name="countb" class="text-box"></div>
 							</div>
 						</div>
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Postal/ZIP Code: </label></div>
+									<label for="postb">Postal/ZIP Code: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="postb" name="postb" class="text-box"></div>
 							</div>
 						</div>
 					</div>
@@ -1455,58 +1534,58 @@
 
 					<div class="row checkout-content">
 						<div class="row-checkout-titles">
-							<label for="fname">Card Number: </label></div>
+							<label for="card">Card Number: </label></div>
 						<div class="row">
-							<input type="text" id="fname" name="fname" class="text-box"></div>
+							<input type="text" id="card" name="card" class="text-box"></div>
 					</div>
 
 					<div class="row">
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Expiry Date: </label></div>
+									<label for="exp">Expiry Date: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="exp" name="exp" class="text-box"></div>
 							</div>
 						</div>
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">CVC: </label></div>
+									<label for="cvc">CVC: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="cvc" name="cvc" class="text-box"></div>
 							</div>
 						</div>
 					</div>
 
 					<div class="row checkout-content">
 						<div class="row-checkout-titles">
-							<label for="fname">Name on Card: </label></div>
+							<label for="cardName">Name on Card: </label></div>
 						<div class="row">
-							<input type="text" id="fname" name="fname" class="text-box"></div>
+							<input type="text" id="cardName" name="cardName" class="text-box"></div>
 					</div>
 
 					<div class="row">
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Phone Number: </label></div>
+									<label for="phone">Phone Number: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="phone" name="phone" class="text-box"></div>
 							</div>
 						</div>
 						<div class="column checkout-half">
 							<div class="row checkout-content">
 								<div class="row-checkout-titles">
-									<label for="fname">Postal/ZIP Code: </label></div>
+									<label for="zip">Postal/ZIP Code: </label></div>
 								<div class="row">
-									<input type="text" id="fname" name="fname" class="text-box"></div>
+									<input type="text" id="zip" name="zip" class="text-box"></div>
 							</div>
 						</div>
 					</div>
 
 					<div class="row">
-						<a href="confirm.html" id="submit-button">CONFIRM</a>
+						<a href="confirm.html" class="submit-button">CONFIRM</a>
 					</div>
 
 				</div>
@@ -1519,7 +1598,7 @@
 						<div class="row summary-row">
 							<div class="column">
 								<div class="item-summary-pic">
-									<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+									<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207" alt="whimsical bulb">
 								</div>
 							</div>
 							<div class="column">
@@ -1532,7 +1611,7 @@
 				<div class="row summary-row">
 							<div class="column">
 								<div class="item-summary-pic">
-									<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+									<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821" alt="candle bulb">
 								</div>
 							</div>
 							<div class="column">
@@ -1543,7 +1622,7 @@
 						</div>
 
 						<div class="row">
-							<label for="fname">Promo Code: </label> <input type="text" id="fname" name="fname">
+							<label for="promo">Promo Code: </label> <input type="text" id="promo" name="promo">
 						</div>
 						<div class="row summary-row">
 							<div class="column checkout-summary-total-text">
@@ -1746,7 +1825,7 @@
 					<div class="column cart-pic-column">
 						<div class="item-cart-pic">
 							<a href="itemDetails.html">
-								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207">
+								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/GU_Hero_-_9X-bexSh_1080x.jpg?v=1570090207" alt="whimsical bulb">
 							</a>
 						</div>
 					</div>
@@ -1771,7 +1850,7 @@
 					<div class="column cart-pic-column">
 						<div class="item-cart-pic">
 							<a href="itemDetails.html">
-								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821">
+								<img src="https://cdn.shopify.com/s/files/1/0219/0638/products/Hero_-_Screen_Shot_2019-09-05_at_6.23.41_pm_900x.jpg?v=1572217821" alt="candle bulb">
 							</a>
 						</div>
 					</div>
@@ -1829,11 +1908,9 @@
 					</div>
 				</div>
 
-			</div>
-
 			<div class="row">
 
-				<a href="thanks.html" id="submit-button">COMPLETE PURCHASE</a>
+				<a href="thanks.html" class="submit-button">COMPLETE PURCHASE</a>
 
 			</div>
 
@@ -1861,7 +1938,7 @@
 			</div>
 
 			<div class="row">
-				<a href="webpages.html" id="submit-button">HOME</a>
+				<a href="webpages.html" class="submit-button">HOME</a>
 			</div> <!-- end of category picture row -->
 
 		</div> <!-- end of category-container div -->
@@ -1874,8 +1951,8 @@
 
 		<div class="row" id="footer-example">
 			<div class="footer-left">
-				<label for="fname">SIGN UP FOR OUR NEWSLETTER </label> <br>
-				<input type="text" id="fname" name="fname" placeholder="Email Address">
+				<label for="footer-email">SIGN UP FOR OUR NEWSLETTER </label> <br>
+				<input type="text" id="footer-email" name="footer-email" placeholder="Email Address">
 			</div>
 
 			<div class="footer-line">
@@ -1884,7 +1961,7 @@
 
 			<div class="footer-center">
 				<p class="footer-center-center">FOLLOW US</p>
-				<a href="#"><img src="img/socials.png"></a>
+				<a href="#"><img src="img/socials.png" alt="socials"></a>
 				<p class="footer-links"><a href="productCategory.html">PRODUCTS</a>     |     <a href="contact.html">SUPPORT</a>     |     <a href="about.html">ABOUT</a>     |     <a href="#">LEGAL</a></p> 
 				<p class="footer-links-small"><a href="https://github.com/Aethoro/P02.3">Github</a>     |     <a href="styleguide.html">Styleguide</a></p>
 			</div>
@@ -1897,12 +1974,10 @@
 				<br>Vancouver, BC
 				<br>V6B 3K9
 				<br>
-				<img src="img/payment-icons.png">
+				<img src="img/payment-icons.png" alt="payment">
 				</p>
 			</div>
 		</div> 
-</div>
-</div>
 
 	</body>
 

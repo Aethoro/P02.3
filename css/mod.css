@@ -83,7 +83,6 @@ body{
 
 	.footer-right{
 		margin-right: 4%;
-		align-content: right;
 		text-align: right;
 		color: #f8f8f8;
 	}
@@ -376,7 +375,6 @@ body{
 	}
 
 	.footer-right{
-		align-content: right;
 		text-align: center;
 		color: #f8f8f8;
 		font-size: 0.8rem;
@@ -487,7 +485,7 @@ i:hover {
 	color: black;
 }
 
-#star-rating {
+.star-rating, #star-rating {
 	justify-content: left;
 }
 
@@ -502,7 +500,7 @@ i:hover {
 
 .review-info {
 	position: relative;
-	right: 20;
+	right: 20px;
 }
 
 .banner-container {
@@ -733,7 +731,7 @@ p {
 	position: absolute;
 	text-decoration: none;
 	padding: 5px 10px;
-	background-color:#grey;
+	background-color: grey;
 	border: 2px solid #9CEDEB;
 	color: black;
 	transition: 0.3s ease;
@@ -790,7 +788,6 @@ p {
 }
 
 .item-pic img {
-	max-width: auto;
 	max-height: 500px;
 }
 
@@ -959,7 +956,6 @@ h2{
 
 .text-box {
 	width:100%;
-	align-content: left;
 	margin-right: 20px;
 }
 
@@ -970,7 +966,6 @@ h2{
 
 .checkout-half {
 	width:50%;
-	align-items: left;
 }
 
 .checkout-category-text {
@@ -1193,7 +1188,7 @@ h2{
 	width: 105px;
 }
 
-.send-message-btn:hover, .read-more-button:hover, #toggle-button:hover {
+.send-message-btn:hover, .read-more-button:hover, .toggle-button:hover {
 	background: rgba(156, 237, 235, 0.4);
 }
 
@@ -1220,7 +1215,7 @@ a {
 	color: black;
 }
 
-#submit-button {
+.submit-button, #submit-button {
 	font-weight: bold;
 	text-decoration: none;
 	padding: 15px 20px;
@@ -1234,7 +1229,7 @@ a {
 	cursor: pointer;
 }
 
-#submit-button:hover {
+.submit-button:hover, #submit-button:hover {
 	background-color: rgba(156,237,235,.4);
 }
 
@@ -1519,10 +1514,10 @@ input:not(:checked) + label + .review-popup {
 input + label:after { 
 	content: " "; 
 }
-input:unchecked + label:after {
+input:not(:checked) + label:after {
 	 content: " "; }
 
-#toggle-button {
+.toggle-button {
     background: #9CEDEB;
     border-radius: 5px;
     font-size: 16px;
@@ -1658,7 +1653,7 @@ input, textarea {
 	text-align: left;
 	padding-left: 30px;
 }
-.container #toggle-button {
+.container .toggle-button {
 	margin-left: 15px;
 }
 
