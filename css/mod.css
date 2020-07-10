@@ -83,7 +83,7 @@ body{
 
 	.footer-right{
 		margin-right: 4%;
-		align-content: right;
+	
 		text-align: right;
 		color: #f8f8f8;
 	}
@@ -376,7 +376,7 @@ body{
 	}
 
 	.footer-right{
-		align-content: right;
+	
 		text-align: center;
 		color: #f8f8f8;
 		font-size: 0.8rem;
@@ -734,7 +734,7 @@ p {
 	position: absolute;
 	text-decoration: none;
 	padding: 5px 10px;
-	background-color:#grey;
+	background-color: grey;
 	border: 2px solid #9CEDEB;
 	color: black;
 	transition: 0.3s ease;
@@ -1194,7 +1194,7 @@ h2{
 	width: 105px;
 }
 
-.send-message-btn:hover, .read-more-button:hover, #toggle-button:hover {
+.send-message-btn:hover, .read-more-button:hover, #toggle-button:hover, #toggle-button2:hover{
 	background: rgba(156, 237, 235, 0.4);
 }
 
@@ -1517,12 +1517,6 @@ input:not(:checked) + label + .review-popup {
 	display: none;
 	}
 
-input + label:after { 
-	content: " "; 
-}
-input:unchecked + label:after {
-	 content: " "; }
-
 #toggle-button {
     background: #9CEDEB;
     border-radius: 5px;
@@ -1775,6 +1769,20 @@ flex: 1;
     top:0;
 }
 
+#toggle-button2 {
+    background: #9CEDEB;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    padding: 10px 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+} /* used https://stackoverflow.com/questions/11023816/toggle-divs-without-using-javascript to help with this portion */
+
+#star-rating2 {
+	justify-content: left;
+}
 
 
 
