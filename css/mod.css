@@ -1770,6 +1770,11 @@ flex: 1;
 	background-color: rgba(156,237,235,.4);
 }
 
+.nav-container-example {
+    position: sticky; 
+    top:0;
+}
+
 
 
 
